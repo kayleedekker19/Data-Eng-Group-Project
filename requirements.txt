@@ -1,0 +1,10 @@
+# This requirements.txt file allows other working on project to quickly and easily install all necessary packages
+# This can be achieved by running: pip install -r requirements.txt
+
+ee~=0.2
+earthengine-api~=0.1.392
+numpy~=1.24.4
+requests~=2.31.0
+pandas~=2.2.1
+beautifulsoup4~=4.12.3
+plotly~=5.19.0
