@@ -1,4 +1,4 @@
-"""Creates a dataset to train a machine learning model."""
+"""Creates a dataset - getting it ready to train a machine learning model."""
 
 from __future__ import annotations
 
@@ -16,17 +16,21 @@ import numpy as np
 import requests
 
 # Default values.
-NUM_DATES = 100 # 100
+NUM_DATES = 10  # We could randomly sample 100 dates from a wider range, but here we specify 10 to reduce data size
 MAX_REQUESTS = 10  # 20 is the default EE request quota
-MIN_BATCH_SIZE = 100
+MIN_BATCH_SIZE = 20  # The min number of examples grouped together in each .npz file
 
 # Constants.
-NUM_BINS = 10
+NUM_BINS = 10  # categorise or "bin" continuous data values into discrete categories for stratified sampling
 MAX_PRECIPITATION = 30  # found empirically
 MAX_ELEVATION = 6000  # found empirically
-PATCH_SIZE = 5
-START_DATE = datetime(2024, 1, 1)
-END_DATE = datetime.now() - timedelta(days=30)
+PATCH_SIZE = 5  # fetching data from a 5x5 pixel area around each geographic point - effects granularity of data
+END_DATE = datetime.now() - timedelta(days=30) # Setting to 30 days before current time
+
+# Set the start date to 5 days before the END_DATE
+START_DATE = END_DATE - timedelta(days=30) # We could do this to get more data points: START_DATE = datetime(2024, 1, 1)
+
+# Define a geographic area of interest as a list of (longitude, latitude) pairs
 POLYGON = [(-140.0, 60.0), (-140.0, -60.0), (-10.0, -60.0), (-10.0, 60.0)]
 
 
