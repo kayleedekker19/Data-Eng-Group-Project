@@ -145,14 +145,25 @@ def process_airport_codes(airport_codes):
 def main():
     # Read airport codes from JSON
     airport_codes = read_airport_codes("airports_data.json")
-    working_codes = process_airport_codes(airport_codes)
+    # working_codes = process_airport_codes(airport_codes)
+
+    working_codes = [
+      'OMA', 'JHM', 'IML', 'KMO', 'ACK', 'SZL', 'EMP', 'FRI', 'TCS', 'PAO', 'POE', 'OTM', 'WNA', 'SPS', 'KKB',
+      'ATL', 'DAL', 'ABI', 'MEI', 'MRF', 'DRE', 'FDY', 'LCH', 'LRJ', 'GED', 'BKD', 'FSI', 'DAG', 'JOT', 'MDJ',
+      'SPZ', 'SLK', 'BIH', 'WAL', 'ELP', 'AIK', 'OEO', 'SCM', 'BQV', 'JCT', 'YUB', 'YQB', 'YKX', 'YSU', 'YSE',
+      'YRL', 'YRB', 'ILF', 'YPW', 'ZGI', 'YFR', 'YXR', 'YYL', 'YYD', 'AFA', 'RHD', 'JNI', 'EQS', 'PUD', 'ROS',
+      'JSM', 'USH', 'JUJ', 'LGS', 'COC', 'NEC', 'LCM', 'UAQ', 'SDE', 'VDC', 'TBT', 'CAC', 'MEA', 'MNX', 'ERM',
+      'PAV', 'AQA', 'PMG', 'RIA', 'TSL', 'TGZ', 'QRO', 'JAL', 'GYM', 'CVM', 'LOV', 'LAP', 'BJX', 'PPE', 'SLP',
+      'VER', 'MZT', 'ACN', 'SRL', 'PCL', 'JAU', 'AYP', 'RIM', 'BLP', 'ILQ', 'TCQ', 'TRU', 'CHM', 'JUL', 'VGZ',
+      'GPI', 'LPD', 'PUU', 'PSO', 'PVA', 'PCR', 'BAQ', 'APO'
+      ]
 
     # Define the range of years you're interested in
     start_year = 2023
     end_year = 2023
 
     # Loop through every xth airport code
-    x = 1 # Change depending on how much data - to minimise data we are only gathering data for every 5th airport code
+    x = 22  # Change depending on how much data - to minimise data we are only gathering data for every 5th airport code
     for i in range(0, len(working_codes), x):
         airport_code = working_codes[i]
         scrape_weather_data(airport_code, start_year, end_year)
