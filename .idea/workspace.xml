@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38ba4869-f55d-4354-87f6-750f03617f83" name="Changes" comment="API weather scraping data">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/DataEngineeringProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_sources/not_needed_py_files/weather_api_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_sources/not_needed_py_files/weather_scraping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_sources/weather_api_forecast.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualisations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-data/dist/weather_data-1.0.0-py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud_bucket/create_datasets_beam.py" beforeDir="false" afterPath="$PROJECT_DIR$/cloud_bucket/create_datasets_beam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submit_dataflow_job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/submit_dataflow_job.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,59 +55,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Apache_Beam_Create_Datasets.executor": "Run",
-    "Python.Data_Google_Earth_Engine.executor": "Run",
-    "Python.Historical_Weather_Scraping.executor": "Run",
-    "Python.Merge karta.executor": "Run",
-    "Python.Visualise_Functions.executor": "Run",
-    "Python.Weather_API_request.executor": "Run",
-    "Python.airport_codes.executor": "Run",
-    "Python.airport_data_api.executor": "Run",
-    "Python.app_1.executor": "Run",
-    "Python.app_2.executor": "Run",
-    "Python.app_3.executor": "Run",
-    "Python.create_datasets.executor": "Run",
-    "Python.create_datasets_beam.executor": "Run",
-    "Python.create_datasets_beam_dataflow.executor": "Run",
-    "Python.data.executor": "Run",
-    "Python.earth_api_test.executor": "Run",
-    "Python.parquet_spark.executor": "Run",
-    "Python.run_on_dataflow.executor": "Run",
-    "Python.schema_creation_check.executor": "Run",
-    "Python.scrap.executor": "Run",
-    "Python.scraping_2.executor": "Run",
-    "Python.spark_test.executor": "Run",
-    "Python.testing_api.executor": "Run",
-    "Python.testing_codes.executor": "Run",
-    "Python.testing_scrape.executor": "Run",
-    "Python.vis_1.executor": "Run",
-    "Python.visualise_script.executor": "Run",
-    "Python.weather_api_forecast.executor": "Run",
-    "Python.weather_api_request.executor": "Run",
-    "Python.weather_json_spark.executor": "Run",
-    "Python.weather_scraping.executor": "Run",
-    "Python.weather_underground_scraping.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Apache_Beam_Create_Datasets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Data_Google_Earth_Engine.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Historical_Weather_Scraping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Merge karta.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Visualise_Functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Weather_API_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python.airport_codes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.airport_data_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_datasets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_datasets_beam.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_datasets_beam_dataflow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.earth_api_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parquet_spark.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_on_dataflow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.schema_creation_check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scrap.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scraping_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.spark_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_codes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_scrape.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vis_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualise_script.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weather_api_forecast.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weather_api_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weather_json_spark.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weather_scraping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weather_underground_scraping.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Shell Script"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Shell Script&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_sources" />
@@ -131,7 +117,7 @@
       <recent name="$PROJECT_DIR$/visualisations" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.data">
     <configuration name="app_1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DataEngineeringProject" />
       <option name="ENV_FILES" value="" />
