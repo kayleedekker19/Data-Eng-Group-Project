@@ -8,3 +8,4 @@ requests~=2.31.0
 pandas~=2.2.1
 beautifulsoup4~=4.12.3
 plotly~=5.19.0
+#python-dotenv

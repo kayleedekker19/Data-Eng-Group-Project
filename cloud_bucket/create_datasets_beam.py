@@ -7,11 +7,13 @@ from datetime import datetime, timedelta
 import logging
 import random
 import uuid
+import argparse
 
 import apache_beam as beam
 from apache_beam.io.filesystems import FileSystems
 from apache_beam.options.pipeline_options import PipelineOptions
 import ee
+import os
 import numpy as np
 import requests
 
@@ -176,16 +178,10 @@ def run(
 
 
 def main() -> None:
-    import argparse
-
     logging.getLogger().setLevel(logging.INFO)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--data-path",
-        required=True,
-        help="Directory path to save the data files",
-    )
+    # Remove the --data-path argument as we'll get it from an environment variable
     parser.add_argument(
         "--num-dates",
         type=int,
@@ -212,8 +208,14 @@ def main() -> None:
     )
     args, beam_args = parser.parse_known_args()
 
+    # Construct the data_path using BUCKET_NAME from environment variable
+    bucket_name = os.getenv('BUCKET_NAME')  # Returns None if BUCKET_NAME is not set
+    if not bucket_name:
+        raise ValueError("BUCKET_NAME environment variable not set.")
+    data_path = f"gs://{bucket_name}/weather/data"
+
     run(
-        data_path=args.data_path,
+        data_path=data_path,
         num_dates=args.num_dates,
         num_bins=args.num_bins,
         max_requests=args.max_requests,
@@ -221,6 +223,6 @@ def main() -> None:
         beam_args=beam_args,
     )
 
-
 if __name__ == "__main__":
     main()
+
