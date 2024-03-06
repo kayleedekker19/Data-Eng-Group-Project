@@ -6,7 +6,7 @@ TEMP_LOCATION="gs://${BUCKET_NAME}/weather/temp"
 EXTRA_PACKAGE="./weather-data/dist/weather-data-1.0.0.tar.gz"
 
 # We can activate our virtual environment if needed
-/Users/kayleedekker/PycharmProjects/DataEngineeringProject/.venv/bin/activate
+#/Users/kayleedekker/PycharmProjects/DataEngineeringProject/.venv/bin/activate
 
 # Run the Dataflow job submission command
 python cloud_bucket/create_datasets_beam.py \
