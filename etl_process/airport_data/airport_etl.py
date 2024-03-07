@@ -21,8 +21,6 @@ def fetch_and_process_data(url):
 
     # Iterate directly over the items in the 'results' key
     for item in data.get('results', []):
-        # Since the structure directly matches what we need,
-        # there's no need for renaming or re-structuring the item
         processed_data.append(item)
 
     return processed_data
