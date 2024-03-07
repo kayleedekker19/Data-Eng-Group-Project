@@ -92,11 +92,11 @@ def recreate_database_schema(connection):
 
 try:
     connection = psycopg2.connect(
-        user="postgres",
-        password="dataeng",
-        host="34.89.0.15",
-        port="5432",
-        database="Weather_database"
+        user=<"username">,
+        password=<"password">,
+        host=<"host_ip">,
+        port=<"port_number">,
+        database=<"database_name">
     )
 
     # Recreate the database schema
