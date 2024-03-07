@@ -76,12 +76,11 @@ def main():
         "country_name_geo_name_id"
     )
 
-
     # Define JDBC URL and connection properties
-    jdbc_url = "jdbc:postgresql://34.89.0.15:5432/Weather_database"
+    jdbc_url = "jdbc:postgresql://your_database_host:5432/your_database_name"
     connection_properties = {
-        "user": "postgres",
-        "password": "dataeng",
+        "user": "your_username",
+        "password": "your_password",
         "driver": "org.postgresql.Driver"
     }
 
