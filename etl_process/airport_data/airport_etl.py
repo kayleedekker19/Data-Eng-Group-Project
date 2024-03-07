@@ -13,7 +13,7 @@ from pyspark.sql.functions import col
 def fetch_and_process_data(url):
     response = requests.get(url)
     if response.status_code != 200:
-        print("Failed to retrieve data", response.status_code)
+        print(f"Failed to retrieve data with status code {response.status_code}")
         return []
 
     data = response.json()
@@ -21,9 +21,13 @@ def fetch_and_process_data(url):
 
     # Iterate directly over the items in the 'results' key
     for item in data.get('results', []):
+        # Check if 'column_1' exists in the item and rename it to 'airport_code'
+        if 'column_1' in item:
+            item['airport_code'] = item.pop('column_1')
         processed_data.append(item)
 
     return processed_data
+
 
 
 # Main function to orchestrate the ETL process
@@ -54,9 +58,6 @@ def main():
 
     # Convert list of dicts to Spark DataFrame
     airports_df = spark.createDataFrame(all_data)
-
-    # change 'column_1' to 'airport_code'
-    airports_df = airports_df.withColumnRenamed("column_1", "airport_code")
 
     # Change the data type of 'city_name_geo_name_id' from String to Integer
     airports_df = airports_df.withColumn("city_name_geo_name_id", col("city_name_geo_name_id").cast("integer"))
