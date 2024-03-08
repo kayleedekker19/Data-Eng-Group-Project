@@ -1,3 +1,7 @@
+# This is how we create the schema
+# This will overwrite any existing tables and data in the Google Cloud PostgreSQL database
+# Caution when running the script
+
 import psycopg2
 from dotenv import load_dotenv
 import os
