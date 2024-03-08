@@ -1,5 +1,9 @@
 import psycopg2
+from dotenv import load_dotenv
+import os
 
+# Load environment variables from .env file
+load_dotenv()
 
 def recreate_database_schema(connection):
     cursor = connection.cursor()
@@ -89,14 +93,13 @@ def recreate_database_schema(connection):
     connection.commit()
     print("Database schema recreated successfully.")
 
-
 try:
     connection = psycopg2.connect(
-        user=<"username">,
-        password=<"password">,
-        host=<"host_ip">,
-        port=<"port_number">,
-        database=<"database_name">
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        host=os.getenv("DB_HOST"),
+        port=os.getenv("DB_PORT"),
+        database=os.getenv("DB_NAME")
     )
 
     # Recreate the database schema
