@@ -4,11 +4,6 @@ FROM python:3.8-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install Java 8 for Spark, as Spark requires Java
-RUN apt-get update && \
-    apt-get install -y openjdk-11-jre-headless && \
-    apt-get clean;
-
 # Copy the requirements file into the container and install Python dependencies
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
