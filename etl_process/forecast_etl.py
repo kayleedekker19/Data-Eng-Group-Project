@@ -110,11 +110,16 @@ def main():
     for url in urls:
         airports_data.extend(airport_etl.fetch_and_process_data(url))
 
-    # Initialize SparkSession
-    spark_jars_path = os.getenv('SPARK_JARS_PATH')
+    # # Initialize SparkSession
+    # spark_jars_path = os.getenv('SPARK_JARS_PATH')
+    # spark = SparkSession.builder \
+    #     .appName("Weather Data ETL") \
+    #     .config("spark.jars", spark_jars_path) \
+    #     .getOrCreate()
+
     spark = SparkSession.builder \
         .appName("Weather Data ETL") \
-        .config("spark.jars", spark_jars_path) \
+        .config("spark.jars", "/app/libs/postgresql-42.7.2.jar") \
         .getOrCreate()
 
     # Extract codes and coordinates from the fetched airport data
