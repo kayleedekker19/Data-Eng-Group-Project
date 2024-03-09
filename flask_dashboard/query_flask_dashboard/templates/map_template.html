@@ -1,0 +1,133 @@
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{#    <title>Earth Engine Visualizations</title>#}
+{#    <style>#}
+{#        .form-container {#}
+{#            position: absolute;#}
+{#            top: 20px;#}
+{#            left: 20px;#}
+{#            width: 250px;#}
+{#            padding: 15px;#}
+{#            border: 1px solid #ccc;#}
+{#            border-radius: 5px;#}
+{#            background-color: white;#}
+{#            box-shadow: 0 4px 8px rgba(0,0,0,0.1);#}
+{#            z-index: 1000;#}
+{#        }#}
+{#        form {#}
+{#            margin: 0;#}
+{#        }#}
+{#        label, input[type="date"], input[type="time"], input[type="submit"] {#}
+{#            display: block;#}
+{#            margin-top: 10px;#}
+{#            margin-bottom: 10px;#}
+{#        }#}
+{#        label {#}
+{#            margin-bottom: 5px;#}
+{#            font-size: 16px;#}
+{#        }#}
+{#        input[type="date"], input[type="time"] {#}
+{#            width: 100%;#}
+{#            padding: 6px;#}
+{#            border: 1px solid #ccc;#}
+{#            border-radius: 5px;#}
+{#            font-size: 14px;#}
+{#        }#}
+{#        input[type="submit"] {#}
+{#            width: 100%;#}
+{#            padding: 8px;#}
+{#            background-color: #007bff;#}
+{#            color: white;#}
+{#            border: none;#}
+{#            border-radius: 5px;#}
+{#            cursor: pointer;#}
+{#            font-size: 16px;#}
+{#        }#}
+{#        input[type="submit"]:hover {#}
+{#            background-color: #0056b3;#}
+{#        }#}
+{#    </style>#}
+{#</head>#}
+{#<body>#}
+{#    <div class="form-container">#}
+{#        <form action="/" method="post">#}
+{#            <label for="date">Date:</label>#}
+{#            <input type="date" id="date" name="date" value="2019-09-02">#}
+{#            <label for="time">Time (HH:MM):</label>#}
+{#            <input type="time" id="time" name="time" value="18:00">#}
+{#            <input type="submit" value="Update Map">#}
+{#        </form>#}
+{#    </div>#}
+{#    {{ map_html|safe }}#}
+{#</body>#}
+{#</html>#}
+
+
+
+
+
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .form-container {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    form {
+        margin: 0;
+    }
+    label, input[type="date"], input[type="time"], input[type="submit"] {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    label {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    input[type="date"], input[type="time"] {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="form-container">
+    <form action="/" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="2019-09-02">
+        <label for="time">Time (HH:MM):</label>
+        <input type="time" id="time" name="time" value="18:00">
+        <input type="submit" value="Update Map">
+    </form>
+</div>
+{{ map_html|safe }}
+{% endblock %}
+
+
+
