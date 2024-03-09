@@ -1,0 +1,79 @@
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{#    <title>Weather Data Graph</title>#}
+{#    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>Weather Forecast Graph</h1>#}
+{#    <form action="/graph" method="post">#}
+{#        <select name="airport_code">#}
+{#            {% for code in airport_codes %}#}
+{#                <option value="{{ code[0] }}">{{ code[0] }}</option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+{#        <select name="weather_variable">#}
+{#            {% for variable in weather_variables %}#}
+{#                <option value="{{ variable }}">{{ variable.capitalize() }}</option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+{#        <input type="submit" value="Generate Graph">#}
+{#    </form>#}
+{##}
+{#    {% if graph %}#}
+{#        <div id="graph"></div>#}
+{#        <script type="text/javascript">#}
+{#            // Declare 'figures' in the global scope#}
+{#            var figures = {};#}
+{##}
+{#            // Then assign it inside the block to avoid linter warnings#}
+{#            {% if graph %}#}
+{#                figures = JSON.parse({{ graph | tojson | safe }});#}
+{#                Plotly.newPlot('graph', figures.data, figures.layout);#}
+{#            {% endif %}#}
+{#        </script>#}
+{#    {% endif %}#}
+{#</body>#}
+{#</html>#}
+
+
+
+
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <title>Weather Data Graph</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Weather Forecast Graph</h1>
+    <form action="/graph" method="post">
+        <select name="airport_code">
+            {% for code in airport_codes %}
+                <option value="{{ code[0] }}">{{ code[0] }}</option>
+            {% endfor %}
+        </select>
+        <select name="weather_variable">
+            {% for variable in weather_variables %}
+                <option value="{{ variable }}">{{ variable.capitalize() }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Generate Graph">
+    </form>
+
+    {% if graph %}
+        <div id="graph"></div>
+        <script type="text/javascript">
+            // Declare 'figures' in the global scope
+            var figures = {};
+
+            // Then assign it inside the block to avoid linter warnings
+            {% if graph %}
+                figures = JSON.parse({{ graph | tojson | safe }});
+                Plotly.newPlot('graph', figures.data, figures.layout);
+            {% endif %}
+        </script>
+    {% endif %}
+</body>
+{% endblock %}

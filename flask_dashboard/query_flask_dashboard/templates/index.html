@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Information</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .map-container {
+            width: 80%; /* You can adjust the width as needed */
+            height: 80%; /* You can adjust the height as needed */
+            margin: auto; /* This will center your map horizontally */
+            position: relative; /* Needed for absolute positioning of the title */
+        }
+        .map-title {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: -30px; /* Adjust this value to move the title up */
+            left: 0;
+            font-size: 24px; /* Adjust font size as needed */
+            font-weight: bold;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="map-container">
+        <div class="map-title">Airport Information</div>
+        <div id="map">{{ fig_html|safe }}</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#<style>#}
+{#    body {#}
+{#        margin: 0;#}
+{#        padding: 0;#}
+{#        display: flex;#}
+{#        justify-content: center;#}
+{#        align-items: center;#}
+{#        height: 100vh;#}
+{#        font-family: Arial, sans-serif;#}
+{#    }#}
+{#    .map-container {#}
+{#        width: 80%; /* You can adjust the width as needed */#}
+{#        height: 80%; /* You can adjust the height as needed */#}
+{#        margin: auto; /* This will center your map horizontally */#}
+{#        position: relative; /* Needed for absolute positioning of the title */#}
+{#    }#}
+{#    .map-title {#}
+{#        text-align: center;#}
+{#        width: 100%;#}
+{#        position: absolute;#}
+{#        top: -30px; /* Adjust this value to move the title up */#}
+{#        left: 0;#}
+{#        font-size: 24px; /* Adjust font size as needed */#}
+{#        font-weight: bold;#}
+{#    }#}
+{#    #map {#}
+{#        height: 100%;#}
+{#        width: 100%;#}
+{#    }#}
+{#</style>#}
+{##}
+{#<div class="map-container">#}
+{#    <div class="map-title">Airport Information</div>#}
+{#    <div id="map">{{ fig_html|safe }}</div>#}
+{#</div>#}
+{#{% endblock %}#}
+
