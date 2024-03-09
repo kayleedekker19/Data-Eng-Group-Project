@@ -60,11 +60,16 @@ def process_all_files(spark, directory):
 
 
 def main():
-    # Initialize SparkSession
-    spark_jars_path = os.getenv('SPARK_JARS_PATH')
+    # # Initialize SparkSession
+    # spark_jars_path = os.getenv('SPARK_JARS_PATH')
+    # spark = SparkSession.builder \
+    #     .appName("PostgreSQL Historic Data Connection") \
+    #     .config("spark.jars", spark_jars_path) \
+    #     .getOrCreate()
+
     spark = SparkSession.builder \
-        .appName("PostgreSQL Historic Data Connection") \
-        .config("spark.jars", spark_jars_path) \
+        .appName("Airport Data ETL") \
+        .config("spark.jars", "/app/libs/postgresql-42.7.2.jar") \
         .getOrCreate()
 
     # Get the directory containing historic data Parquet files
@@ -154,7 +159,7 @@ def main():
     }
 
     # # Write DataFrames to PostgreSQL
-    # historic_df.write.jdbc(url=jdbc_url, table="historic_weather", mode="overwrite", properties=connection_properties)
+    historic_df.write.jdbc(url=jdbc_url, table="historic_weather", mode="overwrite", properties=connection_properties)
 
     print("Successfully uploaded all the data to the database")
 
