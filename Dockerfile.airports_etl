@@ -19,5 +19,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of your application's code into the container
 COPY . /app/
 
+# After the COPY . /app/ instruction
+COPY libs/postgresql-42.7.2.jar /app/libs/
+
 # Command to run your application
 CMD ["python", "etl_process/airport_data/airport_etl.py"]
