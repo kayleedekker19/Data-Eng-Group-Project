@@ -138,6 +138,7 @@ def main():
     df = df.withColumn("city", df.city.dropFields("id", "coord", "population"))
     df = df.withColumn("latitude", df.city.coordinates.lat).withColumn("longitude", df.city.coordinates.lon)
 
+    # Apply the flatten_forecast function
     flattened_df = flatten_forecast(df)
 
     # Convert "datetime_recorded" from string to timestamp
