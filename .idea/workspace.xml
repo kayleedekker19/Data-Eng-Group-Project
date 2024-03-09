@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38ba4869-f55d-4354-87f6-750f03617f83" name="Changes" comment="Update code comment changes">
-      <change afterPath="$PROJECT_DIR$/apache_spark/not_needed_py_files_3/cloud_spark.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apache_spark/not_needed_py_files_3/spark_transform_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apache_spark/not_needed_py_files_3/testing_sql_conn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apache_spark/spark_transform_cloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_sources/not_needed_py_files/historic_weather_spark.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_sources/transform_load_all/spark_transform_load.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/historic_data_to_sql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/historic_elt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/not_needed_py_files_2/aiport_elt_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/not_needed_py_files_2/create_schema_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/postgreSQL/queries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/web_scraping/gcs_to_sql_historic_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/web_scraping/historic_data_stored_to_gcs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process/web_scraping/test_spark_with_gcs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/final_dashboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/flask_google_earth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/flask_input_label.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/flask_sql_plot_airport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/flask_sql_plot_forecast.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/flask_sql_plot_historic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/flask_sql_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/templates/graph.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/templates/graph_historic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/templates/map_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_dashboard/query_flask_dashboard/templates/query_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +138,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "relational-branch",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/kayleedekker/Library/Mobile Documents/com~apple~CloudDocs/Documents/aa - UCL/Business Analytics",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
