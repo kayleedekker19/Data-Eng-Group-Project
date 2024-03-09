@@ -1,0 +1,2564 @@
+{
+    "results": [
+        {
+            "airport_code": "OMA",
+            "airport_name": "Eppley Airfield",
+            "city_name": "Omaha",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 41.3,
+            "longitude": -95.9,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5074472",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -95.9,
+                "lat": 41.3
+            }
+        },
+        {
+            "airport_code": "JHM",
+            "airport_name": "Kapalua West Maui",
+            "city_name": "Lahaina",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 20.963056,
+            "longitude": -156.673056,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5849996",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -156.673056,
+                "lat": 20.963056
+            }
+        },
+        {
+            "airport_code": "IML",
+            "airport_name": "Imperial",
+            "city_name": "Imperial",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 40.516667,
+            "longitude": -101.616667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5696354",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -101.616667,
+                "lat": 40.516667
+            }
+        },
+        {
+            "airport_code": "KMO",
+            "airport_name": "Manokotak SPB",
+            "city_name": "Manokotak",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 58.966667,
+            "longitude": -159.05,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -159.05,
+                "lat": 58.966667
+            }
+        },
+        {
+            "airport_code": "ACK",
+            "airport_name": "Nantucket Memorial",
+            "city_name": "Nantucket",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 41.266667,
+            "longitude": -70.066667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4944903",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -70.066667,
+                "lat": 41.266667
+            }
+        },
+        {
+            "airport_code": "SZL",
+            "airport_name": "Whiteman AFB",
+            "city_name": "Kansas",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 51.083333,
+            "longitude": 5.683333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": 5.683333,
+                "lat": 51.083333
+            }
+        },
+        {
+            "airport_code": "EMP",
+            "airport_name": "Emporia",
+            "city_name": "Emporia",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 38.333333,
+            "longitude": -96.183333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4757673",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -96.183333,
+                "lat": 38.333333
+            }
+        },
+        {
+            "airport_code": "FRI",
+            "airport_name": "Marshall AAF",
+            "city_name": "Fort Riley, KS",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 39.055278,
+            "longitude": -96.764444,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -96.764444,
+                "lat": 39.055278
+            }
+        },
+        {
+            "airport_code": "TCS",
+            "airport_name": "Municipal",
+            "city_name": "Truth Or Consequences",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 50.033333,
+            "longitude": 7.433333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5495292",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": 7.433333,
+                "lat": 50.033333
+            }
+        },
+        {
+            "airport_code": "PAO",
+            "airport_name": "Palo Alto",
+            "city_name": "Palo Alto",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 37.466667,
+            "longitude": -122.116667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5380748",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -122.116667,
+                "lat": 37.466667
+            }
+        },
+        {
+            "airport_code": "POE",
+            "airport_name": "Polk AAF",
+            "city_name": "Fort Polk",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 31.033333,
+            "longitude": -93.183333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -93.183333,
+                "lat": 31.033333
+            }
+        },
+        {
+            "airport_code": "ZTJ",
+            "airport_name": "Princeton JT Rail",
+            "city_name": "Princeton",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 48.416667,
+            "longitude": -53.6,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5268096",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -53.6,
+                "lat": 48.416667
+            }
+        },
+        {
+            "airport_code": "OTM",
+            "airport_name": "Industrial",
+            "city_name": "Ottumwa",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 41.1,
+            "longitude": -92.45,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4870380",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -92.45,
+                "lat": 41.1
+            }
+        },
+        {
+            "airport_code": "WNA",
+            "airport_name": "Napakiak SPB",
+            "city_name": "Napakiak",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 60.7,
+            "longitude": -162.116667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -162.116667,
+                "lat": 60.7
+            }
+        },
+        {
+            "airport_code": "SPS",
+            "airport_name": "Sheppard AFB",
+            "city_name": "Wichita Falls",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 33.983333,
+            "longitude": -98.516667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4741752",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -98.516667,
+                "lat": 33.983333
+            }
+        },
+        {
+            "airport_code": "KKB",
+            "airport_name": "SPB",
+            "city_name": "Kitoi Bay",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 58.183333,
+            "longitude": -152.35,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -152.35,
+                "lat": 58.183333
+            }
+        },
+        {
+            "airport_code": "BWS",
+            "airport_name": "Blaine",
+            "city_name": "Blaine",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 48.966667,
+            "longitude": -122.833333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5787475",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -122.833333,
+                "lat": 48.966667
+            }
+        },
+        {
+            "airport_code": "ATL",
+            "airport_name": "Hartsfield-jackson Atlanta International",
+            "city_name": "Atlanta, GA",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 33.636667,
+            "longitude": -84.428056,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4883772",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -84.428056,
+                "lat": 33.636667
+            }
+        },
+        {
+            "airport_code": "DAL",
+            "airport_name": "Love Field",
+            "city_name": "Dallas",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 32.852778,
+            "longitude": -96.85,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5722064",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -96.85,
+                "lat": 32.852778
+            }
+        },
+        {
+            "airport_code": "ABI",
+            "airport_name": "Municipal",
+            "city_name": "Abilene",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 32.416667,
+            "longitude": -99.683333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4669635",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -99.683333,
+                "lat": 32.416667
+            }
+        },
+        {
+            "airport_code": "MEI",
+            "airport_name": "Key Field",
+            "city_name": "Meridian",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 32.333333,
+            "longitude": -88.75,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5600685",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -88.75,
+                "lat": 32.333333
+            }
+        },
+        {
+            "airport_code": "WLR",
+            "airport_name": "Loring",
+            "city_name": "Loring",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 55.6,
+            "longitude": -131.566667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -131.566667,
+                "lat": 55.6
+            }
+        },
+        {
+            "airport_code": "ANA",
+            "airport_name": "Orange County Steel Salvage Heliport",
+            "city_name": "Anaheim",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 33.848333,
+            "longitude": -117.850278,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5323810",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -117.850278,
+                "lat": 33.848333
+            }
+        },
+        {
+            "airport_code": "MRF",
+            "airport_name": "Municipal",
+            "city_name": "Marfa",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 30.233333,
+            "longitude": -103.866667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5525775",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -103.866667,
+                "lat": 30.233333
+            }
+        },
+        {
+            "airport_code": "DRE",
+            "airport_name": "Drummond Island",
+            "city_name": "Drummond Island",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 46.016667,
+            "longitude": -83.75,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -83.75,
+                "lat": 46.016667
+            }
+        },
+        {
+            "airport_code": "FDY",
+            "airport_name": "Findlay",
+            "city_name": "Findlay",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 41.016667,
+            "longitude": -83.666667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5153924",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -83.666667,
+                "lat": 41.016667
+            }
+        },
+        {
+            "airport_code": "PUO",
+            "airport_name": "Prudhoe Bay",
+            "city_name": "Prudhoe Bay",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 54.95,
+            "longitude": -1.85,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -1.85,
+                "lat": 54.95
+            }
+        },
+        {
+            "airport_code": "LCH",
+            "airport_name": "Municipal",
+            "city_name": "Lake Charles",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 30.116667,
+            "longitude": -93.216667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4330236",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -93.216667,
+                "lat": 30.116667
+            }
+        },
+        {
+            "airport_code": "LRJ",
+            "airport_name": "Municipal",
+            "city_name": "Lemars",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 42.783333,
+            "longitude": -96.15,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -96.15,
+                "lat": 42.783333
+            }
+        },
+        {
+            "airport_code": "GED",
+            "airport_name": "Sussex County",
+            "city_name": "Georgetown",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 38.683333,
+            "longitude": -75.366667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5422889",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -75.366667,
+                "lat": 38.683333
+            }
+        },
+        {
+            "airport_code": "BKD",
+            "airport_name": "Stephens County",
+            "city_name": "Breckenridge",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 32.75,
+            "longitude": -98.9,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5414872",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -98.9,
+                "lat": 32.75
+            }
+        },
+        {
+            "airport_code": "FSI",
+            "airport_name": "Henry Post AAF",
+            "city_name": "Fort Sill",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 19.833333,
+            "longitude": -72.5,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -72.5,
+                "lat": 19.833333
+            }
+        },
+        {
+            "airport_code": "JBK",
+            "airport_name": "Berkeley",
+            "city_name": "Berkeley",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 37.95,
+            "longitude": -122.3,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5327684",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -122.3,
+                "lat": 37.95
+            }
+        },
+        {
+            "airport_code": "DAG",
+            "airport_name": "Barstow-Daggett",
+            "city_name": "Daggett",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 34.85,
+            "longitude": -116.783333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -116.783333,
+                "lat": 34.85
+            }
+        },
+        {
+            "airport_code": "JOT",
+            "airport_name": "Municipal",
+            "city_name": "Joliet",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 41.533333,
+            "longitude": -88.083333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4898015",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -88.083333,
+                "lat": 41.533333
+            }
+        },
+        {
+            "airport_code": "MDJ",
+            "airport_name": "City-county",
+            "city_name": "Madras",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 44.633333,
+            "longitude": -121.133333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5738690",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -121.133333,
+                "lat": 44.633333
+            }
+        },
+        {
+            "airport_code": "SPZ",
+            "airport_name": "Springdale Muni",
+            "city_name": "Springdale",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 36.183333,
+            "longitude": -94.133333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5213447",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -94.133333,
+                "lat": 36.183333
+            }
+        },
+        {
+            "airport_code": "SLK",
+            "airport_name": "Adirondack",
+            "city_name": "Saranac Lake",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 44.4,
+            "longitude": -74.2,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5136322",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -74.2,
+                "lat": 44.4
+            }
+        },
+        {
+            "airport_code": "BIH",
+            "airport_name": "Bishop",
+            "city_name": "Bishop",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 37.366667,
+            "longitude": -118.35,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5328808",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -118.35,
+                "lat": 37.366667
+            }
+        },
+        {
+            "airport_code": "ZWI",
+            "airport_name": "Wilmington Rail",
+            "city_name": "Wilmington",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": -32.65,
+            "longitude": 138.1,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4955840",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": 138.1,
+                "lat": -32.65
+            }
+        },
+        {
+            "airport_code": "AYE",
+            "airport_name": "AAF Heliport",
+            "city_name": "Fort Devens",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 19.833333,
+            "longitude": -72.5,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -72.5,
+                "lat": 19.833333
+            }
+        },
+        {
+            "airport_code": "WAL",
+            "airport_name": "Wallops Flight Center",
+            "city_name": "Chincoteague",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 37.933333,
+            "longitude": -75.383333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4752495",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -75.383333,
+                "lat": 37.933333
+            }
+        },
+        {
+            "airport_code": "ELP",
+            "airport_name": "El Paso International Airport",
+            "city_name": "El Paso",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 31.8,
+            "longitude": -106.383333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5520993",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -106.383333,
+                "lat": 31.8
+            }
+        },
+        {
+            "airport_code": "HUD",
+            "airport_name": "Humboldt",
+            "city_name": "Humboldt",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 42.733333,
+            "longitude": -94.216667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4861335",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -94.216667,
+                "lat": 42.733333
+            }
+        },
+        {
+            "airport_code": "AIK",
+            "airport_name": "Municipal",
+            "city_name": "Aiken",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 33.65,
+            "longitude": -81.683333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4569067",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -81.683333,
+                "lat": 33.65
+            }
+        },
+        {
+            "airport_code": "OEO",
+            "airport_name": "Municipal",
+            "city_name": "Osceola",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 45.316667,
+            "longitude": -92.7,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "5265824",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -92.7,
+                "lat": 45.316667
+            }
+        },
+        {
+            "airport_code": "SCM",
+            "airport_name": "SPB",
+            "city_name": "Scammon Bay",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 61.866667,
+            "longitude": -165.583333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -165.583333,
+                "lat": 61.866667
+            }
+        },
+        {
+            "airport_code": "TEH",
+            "airport_name": "Tetlin",
+            "city_name": "Tetlin",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 36.766667,
+            "longitude": 49.5,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": 49.5,
+                "lat": 36.766667
+            }
+        },
+        {
+            "airport_code": "BQV",
+            "airport_name": "Bartlett SPB",
+            "city_name": "Gustavus",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 58.45,
+            "longitude": -135.883333,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -135.883333,
+                "lat": 58.45
+            }
+        },
+        {
+            "airport_code": "JCT",
+            "airport_name": "Kimble County",
+            "city_name": "Junction",
+            "country_name": "United States",
+            "country_code": "US",
+            "latitude": 30.483333,
+            "longitude": -99.766667,
+            "world_area_code": 67,
+            "city_name_geo_name_id": "4701791",
+            "country_name_geo_name_id": 6252001,
+            "coordinates": {
+                "lon": -99.766667,
+                "lat": 30.483333
+            }
+        },
+        {
+            "airport_code": "YUB",
+            "airport_name": "Tuktoyaktuk",
+            "city_name": "Tuktoyaktuk",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 69.45,
+            "longitude": -1.066667,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -1.066667,
+                "lat": 69.45
+            }
+        },
+        {
+            "airport_code": "YQB",
+            "airport_name": "Qu\u00e9bec",
+            "city_name": "Qu\u00e9bec City",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 46.791111,
+            "longitude": -71.393333,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "6325494",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -71.393333,
+                "lat": 46.791111
+            }
+        },
+        {
+            "airport_code": "YTT",
+            "airport_name": "Tisdale",
+            "city_name": "Tisdale, sk",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 52.836667,
+            "longitude": -104.066667,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "6166987",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -104.066667,
+                "lat": 52.836667
+            }
+        },
+        {
+            "airport_code": "YDR",
+            "airport_name": "Broadview",
+            "city_name": "Broadview",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 50.333333,
+            "longitude": -102.5,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -102.5,
+                "lat": 50.333333
+            }
+        },
+        {
+            "airport_code": "YKX",
+            "airport_name": "Kirkland Lake",
+            "city_name": "Kirkland Lake",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 48.210278,
+            "longitude": -79.981389,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "5992836",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -79.981389,
+                "lat": 48.210278
+            }
+        },
+        {
+            "airport_code": "YSU",
+            "airport_name": "Summerside",
+            "city_name": "Summerside",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 46.433333,
+            "longitude": -63.833333,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "6159244",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -63.833333,
+                "lat": 46.433333
+            }
+        },
+        {
+            "airport_code": "YCV",
+            "airport_name": "Cartierville",
+            "city_name": "Cartierville",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 45.516667,
+            "longitude": -73.716667,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -73.716667,
+                "lat": 45.516667
+            }
+        },
+        {
+            "airport_code": "YSE",
+            "airport_name": "Squamish",
+            "city_name": "Squamish",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 49.781667,
+            "longitude": -123.161944,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -123.161944,
+                "lat": 49.781667
+            }
+        },
+        {
+            "airport_code": "YDS",
+            "airport_name": "Desolation Sound",
+            "city_name": "Desolation Sound",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 47.75,
+            "longitude": -122.25,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -122.25,
+                "lat": 47.75
+            }
+        },
+        {
+            "airport_code": "YRL",
+            "airport_name": "Red Lake",
+            "city_name": "Red Lake",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 51.066667,
+            "longitude": -93.816667,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -93.816667,
+                "lat": 51.066667
+            }
+        },
+        {
+            "airport_code": "YRB",
+            "airport_name": "Resolute",
+            "city_name": "Resolute",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 74.716667,
+            "longitude": -94.983333,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -94.983333,
+                "lat": 74.716667
+            }
+        },
+        {
+            "airport_code": "ILF",
+            "airport_name": "Ilford",
+            "city_name": "Ilford",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 56.066667,
+            "longitude": -95.583333,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -95.583333,
+                "lat": 56.066667
+            }
+        },
+        {
+            "airport_code": "YPW",
+            "airport_name": "Powell River",
+            "city_name": "Powell River",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 49.883333,
+            "longitude": -124.55,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "6112608",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -124.55,
+                "lat": 49.883333
+            }
+        },
+        {
+            "airport_code": "YTK",
+            "airport_name": "Tulugak",
+            "city_name": "Tulugak",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 5.18,
+            "longitude": 120.486111,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": 120.486111,
+                "lat": 5.18
+            }
+        },
+        {
+            "airport_code": "ZGI",
+            "airport_name": "Gods River",
+            "city_name": "Gods River",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 54.683333,
+            "longitude": -94.166667,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -94.166667,
+                "lat": 54.683333
+            }
+        },
+        {
+            "airport_code": "YFR",
+            "airport_name": "Fort Resolution",
+            "city_name": "Fort Resolution",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 61.183333,
+            "longitude": -113.683333,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -113.683333,
+                "lat": 61.183333
+            }
+        },
+        {
+            "airport_code": "YXR",
+            "airport_name": "Earlton",
+            "city_name": "Earlton",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 47.7,
+            "longitude": -79.85,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -79.85,
+                "lat": 47.7
+            }
+        },
+        {
+            "airport_code": "YKK",
+            "airport_name": "Kitkatla",
+            "city_name": "Kitkatla",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 53.0,
+            "longitude": -130.0,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -130.0,
+                "lat": 53.0
+            }
+        },
+        {
+            "airport_code": "YYL",
+            "airport_name": "Lynn Lake",
+            "city_name": "Lynn Lake",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 56.866667,
+            "longitude": -101.066667,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -101.066667,
+                "lat": 56.866667
+            }
+        },
+        {
+            "airport_code": "YYD",
+            "airport_name": "Smithers",
+            "city_name": "Smithers",
+            "country_name": "Canada",
+            "country_code": "CA",
+            "latitude": 54.816667,
+            "longitude": -127.183333,
+            "world_area_code": 906,
+            "city_name_geo_name_id": "6149996",
+            "country_name_geo_name_id": 6251999,
+            "coordinates": {
+                "lon": -127.183333,
+                "lat": 54.816667
+            }
+        },
+        {
+            "airport_code": "AFA",
+            "airport_name": "San Rafael",
+            "city_name": "San Rafael",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -34.583333,
+            "longitude": -68.4,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3836669",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -68.4,
+                "lat": -34.583333
+            }
+        },
+        {
+            "airport_code": "RHD",
+            "airport_name": "Rio Hondo",
+            "city_name": "Rio Hondo",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -27.466667,
+            "longitude": -64.916667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -64.916667,
+                "lat": -27.466667
+            }
+        },
+        {
+            "airport_code": "JNI",
+            "airport_name": "Junin",
+            "city_name": "Junin",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -34.583333,
+            "longitude": -60.966667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3853354",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -60.966667,
+                "lat": -34.583333
+            }
+        },
+        {
+            "airport_code": "EQS",
+            "airport_name": "Esquel",
+            "city_name": "Esquel",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -42.916667,
+            "longitude": -71.15,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -71.15,
+                "lat": -42.916667
+            }
+        },
+        {
+            "airport_code": "PUD",
+            "airport_name": "Puerto Deseado",
+            "city_name": "Puerto Deseado",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -47.716667,
+            "longitude": -65.916667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -65.916667,
+                "lat": -47.716667
+            }
+        },
+        {
+            "airport_code": "ROS",
+            "airport_name": "Fisherton",
+            "city_name": "Rosario",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -32.833333,
+            "longitude": -60.716667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3838583",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -60.716667,
+                "lat": -32.833333
+            }
+        },
+        {
+            "airport_code": "JSM",
+            "airport_name": "Jose De San Martin",
+            "city_name": "Jose De San Martin",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -44.033333,
+            "longitude": -70.466667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -70.466667,
+                "lat": -44.033333
+            }
+        },
+        {
+            "airport_code": "USH",
+            "airport_name": "Islas Malvinas",
+            "city_name": "Ushuaia",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -54.843333,
+            "longitude": -68.295833,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3833367",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -68.295833,
+                "lat": -54.843333
+            }
+        },
+        {
+            "airport_code": "CVI",
+            "airport_name": "Caleta Olivia",
+            "city_name": "Caleta Olivia",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -46.433333,
+            "longitude": -67.516667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -67.516667,
+                "lat": -46.433333
+            }
+        },
+        {
+            "airport_code": "JUJ",
+            "airport_name": "El Cadillal",
+            "city_name": "Jujuy",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -24.233333,
+            "longitude": -65.266667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3836564",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -65.266667,
+                "lat": -24.233333
+            }
+        },
+        {
+            "airport_code": "LGS",
+            "airport_name": "Malargue",
+            "city_name": "Malargue",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -35.493611,
+            "longitude": -69.574167,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -69.574167,
+                "lat": -35.493611
+            }
+        },
+        {
+            "airport_code": "COC",
+            "airport_name": "Concordia",
+            "city_name": "Concordia",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -31.3,
+            "longitude": -58.016667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3435261",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -58.016667,
+                "lat": -31.3
+            }
+        },
+        {
+            "airport_code": "PRQ",
+            "airport_name": "Pres. Roque Saenz Pena",
+            "city_name": "Pres. Roque Saenz Pena",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -26.766666999999998,
+            "longitude": -60.266667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -60.266667,
+                "lat": -26.766666999999998
+            }
+        },
+        {
+            "airport_code": "NEC",
+            "airport_name": "Necochea",
+            "city_name": "Necochea",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -38.666667,
+            "longitude": -58.75,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3430443",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -58.75,
+                "lat": -38.666667
+            }
+        },
+        {
+            "airport_code": "LCP",
+            "airport_name": "Loncopue",
+            "city_name": "Loncopue",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -38.066667,
+            "longitude": -70.616667,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -70.616667,
+                "lat": -38.066667
+            }
+        },
+        {
+            "airport_code": "LCM",
+            "airport_name": "La Cumbre",
+            "city_name": "La Cumbre",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -31.0,
+            "longitude": -64.533333,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -64.533333,
+                "lat": -31.0
+            }
+        },
+        {
+            "airport_code": "UAQ",
+            "airport_name": "San Juan",
+            "city_name": "San Juan",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -31.6,
+            "longitude": -68.55,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3837213",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -68.55,
+                "lat": -31.6
+            }
+        },
+        {
+            "airport_code": "SDE",
+            "airport_name": "Santiago Del Estero",
+            "city_name": "Santiago Del Estero",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -27.766666999999998,
+            "longitude": -64.283333,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "3835869",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -64.283333,
+                "lat": -27.766666999999998
+            }
+        },
+        {
+            "airport_code": "VCF",
+            "airport_name": "Valcheta",
+            "city_name": "Valcheta",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -40.7,
+            "longitude": -66.15,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -66.15,
+                "lat": -40.7
+            }
+        },
+        {
+            "airport_code": "CVH",
+            "airport_name": "Caviahue",
+            "city_name": "Caviahue",
+            "country_name": "Argentina",
+            "country_code": "AR",
+            "latitude": -37.916667,
+            "longitude": -71.013889,
+            "world_area_code": 303,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3865483,
+            "coordinates": {
+                "lon": -71.013889,
+                "lat": -37.916667
+            }
+        },
+        {
+            "airport_code": "ITI",
+            "airport_name": "Itambacuri",
+            "city_name": "Itambacuri",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -18.016667,
+            "longitude": -41.7,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3460817",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -41.7,
+                "lat": -18.016667
+            }
+        },
+        {
+            "airport_code": "VDC",
+            "airport_name": "Vitoria Da Conquista",
+            "city_name": "Vitoria Da Conquista",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -14.883333,
+            "longitude": -40.866667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3444914",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -40.866667,
+                "lat": -14.883333
+            }
+        },
+        {
+            "airport_code": "OIA",
+            "airport_name": "Ourilandia",
+            "city_name": "Ourilandia",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": 41.416667,
+            "longitude": -8.016667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -8.016667,
+                "lat": 41.416667
+            }
+        },
+        {
+            "airport_code": "TBT",
+            "airport_name": "Internacional",
+            "city_name": "Tabatinga",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -3.95,
+            "longitude": -38.7,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3662075",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -38.7,
+                "lat": -3.95
+            }
+        },
+        {
+            "airport_code": "CAC",
+            "airport_name": "Cascavel",
+            "city_name": "Cascavel",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -24.95,
+            "longitude": -53.483333,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3472969",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -53.483333,
+                "lat": -24.95
+            }
+        },
+        {
+            "airport_code": "MEA",
+            "airport_name": "Macae",
+            "city_name": "Macae",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -22.383333,
+            "longitude": -41.783333,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3458266",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -41.783333,
+                "lat": -22.383333
+            }
+        },
+        {
+            "airport_code": "MNX",
+            "airport_name": "Manicore",
+            "city_name": "Manicore",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -5.816667,
+            "longitude": -61.283333,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3663503",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -61.283333,
+                "lat": -5.816667
+            }
+        },
+        {
+            "airport_code": "CKO",
+            "airport_name": "Cornelio Procopio",
+            "city_name": "Cornelio Procopio",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -23.152222,
+            "longitude": -50.602222,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -50.602222,
+                "lat": -23.152222
+            }
+        },
+        {
+            "airport_code": "TGQ",
+            "airport_name": "Tangara da Serra",
+            "city_name": "Tangara da Serra",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -6.183333,
+            "longitude": -35.816667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -35.816667,
+                "lat": -6.183333
+            }
+        },
+        {
+            "airport_code": "ERM",
+            "airport_name": "Comandante Kraemer",
+            "city_name": "Erechim",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -27.659444,
+            "longitude": -52.275556,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3464073",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -52.275556,
+                "lat": -27.659444
+            }
+        },
+        {
+            "airport_code": "PIV",
+            "airport_name": "Pirapora",
+            "city_name": "Pirapora",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -23.4,
+            "longitude": -47.0,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3453546",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -47.0,
+                "lat": -23.4
+            }
+        },
+        {
+            "airport_code": "PAV",
+            "airport_name": "Paulo Afonso",
+            "city_name": "Paulo Afonso",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -9.383333,
+            "longitude": -38.233333,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3395162",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -38.233333,
+                "lat": -9.383333
+            }
+        },
+        {
+            "airport_code": "AQA",
+            "airport_name": "Araraquara",
+            "city_name": "Araraquara",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -21.811944,
+            "longitude": -48.133056,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -48.133056,
+                "lat": -21.811944
+            }
+        },
+        {
+            "airport_code": "ZMD",
+            "airport_name": "Sena Madureira",
+            "city_name": "Sena Madureira",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -9.066667,
+            "longitude": -68.666667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3662155",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -68.666667,
+                "lat": -9.066667
+            }
+        },
+        {
+            "airport_code": "PMG",
+            "airport_name": "International",
+            "city_name": "Ponta Pora",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -22.533333,
+            "longitude": -55.733333,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3453150",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -55.733333,
+                "lat": -22.533333
+            }
+        },
+        {
+            "airport_code": "BQQ",
+            "airport_name": "Barra",
+            "city_name": "Barra",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -11.066667,
+            "longitude": -43.166667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3470821",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -43.166667,
+                "lat": -11.066667
+            }
+        },
+        {
+            "airport_code": "RIA",
+            "airport_name": "Base Aerea De Santa Maria",
+            "city_name": "Santa Maria, Rs",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -29.683056,
+            "longitude": -53.691667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3450083",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -53.691667,
+                "lat": -29.683056
+            }
+        },
+        {
+            "airport_code": "GUZ",
+            "airport_name": "Guarapari",
+            "city_name": "Guarapari",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -20.666667,
+            "longitude": -40.5,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3461888",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -40.5,
+                "lat": -20.666667
+            }
+        },
+        {
+            "airport_code": "PBV",
+            "airport_name": "Porto Dos Gauchos",
+            "city_name": "Porto Dos Gauchos",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -21.35,
+            "longitude": -51.866667,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -51.866667,
+                "lat": -21.35
+            }
+        },
+        {
+            "airport_code": "JTI",
+            "airport_name": "Jatai",
+            "city_name": "Jatai",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "latitude": -13.83,
+            "longitude": -51.773056,
+            "world_area_code": 316,
+            "city_name_geo_name_id": "3460064",
+            "country_name_geo_name_id": 3469034,
+            "coordinates": {
+                "lon": -51.773056,
+                "lat": -13.83
+            }
+        },
+        {
+            "airport_code": "PCV",
+            "airport_name": "Punta Chivato",
+            "city_name": "Punta Chivato",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 27.083333,
+            "longitude": -112.0,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -112.0,
+                "lat": 27.083333
+            }
+        },
+        {
+            "airport_code": "TSL",
+            "airport_name": "Tamuin",
+            "city_name": "Tamuin",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 21.533333,
+            "longitude": -98.108333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3516347",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -98.108333,
+                "lat": 21.533333
+            }
+        },
+        {
+            "airport_code": "TGZ",
+            "airport_name": "Llano San Juan",
+            "city_name": "Tuxtla Gutierrez",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 16.75,
+            "longitude": -93.116667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3515001",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -93.116667,
+                "lat": 16.75
+            }
+        },
+        {
+            "airport_code": "PNO",
+            "airport_name": "Pinotepa Nacional",
+            "city_name": "Pinotepa Nacional",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 16.35,
+            "longitude": -98.066667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3516926",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -98.066667,
+                "lat": 16.35
+            }
+        },
+        {
+            "airport_code": "VIB",
+            "airport_name": "Villa Constitucion",
+            "city_name": "Villa Constitucion",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 25.058333,
+            "longitude": -111.7,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "4013723",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -111.7,
+                "lat": 25.058333
+            }
+        },
+        {
+            "airport_code": "QRO",
+            "airport_name": "Queretaro",
+            "city_name": "Queretaro",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 20.617221999999998,
+            "longitude": -100.185556,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3991164",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -100.185556,
+                "lat": 20.617221999999998
+            }
+        },
+        {
+            "airport_code": "JAL",
+            "airport_name": "Jalapa",
+            "city_name": "Jalapa",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 19.583333,
+            "longitude": -96.833333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3803064",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -96.833333,
+                "lat": 19.583333
+            }
+        },
+        {
+            "airport_code": "GYM",
+            "airport_name": "Gen Jose M Yanez",
+            "city_name": "Guaymas",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 27.966667,
+            "longitude": -110.933333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "4005143",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -110.933333,
+                "lat": 27.966667
+            }
+        },
+        {
+            "airport_code": "CVM",
+            "airport_name": "Ciudad Victoria",
+            "city_name": "Ciudad Victoria",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 23.716667,
+            "longitude": -98.866667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3530580",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -98.866667,
+                "lat": 23.716667
+            }
+        },
+        {
+            "airport_code": "LOV",
+            "airport_name": "Monclova",
+            "city_name": "Monclova",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 26.95,
+            "longitude": -101.483333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3995523",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -101.483333,
+                "lat": 26.95
+            }
+        },
+        {
+            "airport_code": "TZM",
+            "airport_name": "Tizimin",
+            "city_name": "Tizimin",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 21.15,
+            "longitude": -88.15,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3515504",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -88.15,
+                "lat": 21.15
+            }
+        },
+        {
+            "airport_code": "LAP",
+            "airport_name": "General Manuel M\u00e1rquez De Le\u00f3n International Airport",
+            "city_name": "La Paz",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 24.116667,
+            "longitude": -110.316667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "4000900",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -110.316667,
+                "lat": 24.116667
+            }
+        },
+        {
+            "airport_code": "BJX",
+            "airport_name": "Del Baj\u00edo International",
+            "city_name": "Le\u00f3n",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 20.993333,
+            "longitude": -101.480833,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3998655",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -101.480833,
+                "lat": 20.993333
+            }
+        },
+        {
+            "airport_code": "PPE",
+            "airport_name": "Puerto Penasco",
+            "city_name": "Puerto Penasco",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 31.583333,
+            "longitude": -113.833333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3991347",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -113.833333,
+                "lat": 31.583333
+            }
+        },
+        {
+            "airport_code": "SLP",
+            "airport_name": "San Luis Potosi",
+            "city_name": "San Luis Potosi",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 22.183333,
+            "longitude": -100.983333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3985606",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -100.983333,
+                "lat": 22.183333
+            }
+        },
+        {
+            "airport_code": "VER",
+            "airport_name": "Las Bajadas",
+            "city_name": "Veracruz",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 19.133333,
+            "longitude": -96.2,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3514783",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -96.2,
+                "lat": 19.133333
+            }
+        },
+        {
+            "airport_code": "MZT",
+            "airport_name": "Gen Rafael Buelna",
+            "city_name": "Mazatlan",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 23.233333,
+            "longitude": -106.416667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3996322",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -106.416667,
+                "lat": 23.233333
+            }
+        },
+        {
+            "airport_code": "ACN",
+            "airport_name": "International",
+            "city_name": "Ciudad Acuna",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 29.3,
+            "longitude": -100.916667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "4013728",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -100.916667,
+                "lat": 29.3
+            }
+        },
+        {
+            "airport_code": "SRL",
+            "airport_name": "Santa Rosalia",
+            "city_name": "Santa Rosalia",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 27.333333,
+            "longitude": -112.266667,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "4013724",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -112.266667,
+                "lat": 27.333333
+            }
+        },
+        {
+            "airport_code": "SGM",
+            "airport_name": "San Ignacio",
+            "city_name": "San Ignacio",
+            "country_name": "Mexico",
+            "country_code": "MX",
+            "latitude": 27.283333,
+            "longitude": -112.933333,
+            "world_area_code": 148,
+            "city_name_geo_name_id": "3986862",
+            "country_name_geo_name_id": 3996063,
+            "coordinates": {
+                "lon": -112.933333,
+                "lat": 27.283333
+            }
+        },
+        {
+            "airport_code": "PCL",
+            "airport_name": "Captain Rolden International Airport",
+            "city_name": "Pucallpa",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -8.366667,
+            "longitude": -74.583333,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3693345",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -74.583333,
+                "lat": -8.366667
+            }
+        },
+        {
+            "airport_code": "JAU",
+            "airport_name": "Jauja",
+            "city_name": "Jauja",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -11.8,
+            "longitude": -75.5,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3937733",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -75.5,
+                "lat": -11.8
+            }
+        },
+        {
+            "airport_code": "AYP",
+            "airport_name": "Yanamilla",
+            "city_name": "Ayacucho",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -13.197222,
+            "longitude": -74.247222,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3947019",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -74.247222,
+                "lat": -13.197222
+            }
+        },
+        {
+            "airport_code": "RIM",
+            "airport_name": "Rodriguez De Mendoza",
+            "city_name": "Rodriguez De Mendoza",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -6.333333,
+            "longitude": -77.416667,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -77.416667,
+                "lat": -6.333333
+            }
+        },
+        {
+            "airport_code": "BLP",
+            "airport_name": "Bellavista",
+            "city_name": "Bellavista",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -12.025,
+            "longitude": -77.133333,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3699366",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -77.133333,
+                "lat": -12.025
+            }
+        },
+        {
+            "airport_code": "ILQ",
+            "airport_name": "Ilo",
+            "city_name": "Ilo",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -14.899722,
+            "longitude": -71.956389,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3938415",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -71.956389,
+                "lat": -14.899722
+            }
+        },
+        {
+            "airport_code": "TCQ",
+            "airport_name": "Tacna",
+            "city_name": "Tacna",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -18.053333,
+            "longitude": -70.275833,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3928128",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -70.275833,
+                "lat": -18.053333
+            }
+        },
+        {
+            "airport_code": "TRU",
+            "airport_name": "Trujillo",
+            "city_name": "Trujillo",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -5.566667,
+            "longitude": -73.766667,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3691175",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -73.766667,
+                "lat": -5.566667
+            }
+        },
+        {
+            "airport_code": "CHM",
+            "airport_name": "Chimbote",
+            "city_name": "Chimbote",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -9.083333,
+            "longitude": -78.6,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3698304",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -78.6,
+                "lat": -9.083333
+            }
+        },
+        {
+            "airport_code": "JUL",
+            "airport_name": "Juliaca",
+            "city_name": "Juliaca",
+            "country_name": "Peru",
+            "country_code": "PE",
+            "latitude": -15.483333,
+            "longitude": -70.15,
+            "world_area_code": 368,
+            "city_name_geo_name_id": "3937516",
+            "country_name_geo_name_id": 3932488,
+            "coordinates": {
+                "lon": -70.15,
+                "lat": -15.483333
+            }
+        },
+        {
+            "airport_code": "EUO",
+            "airport_name": "Paratebueno",
+            "city_name": "Paratebueno",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 4.383333,
+            "longitude": -73.2,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3769960",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -73.2,
+                "lat": 4.383333
+            }
+        },
+        {
+            "airport_code": "TCD",
+            "airport_name": "Tarapaca",
+            "city_name": "Tarapaca",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 4.933333,
+            "longitude": -72.2,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -72.2,
+                "lat": 4.933333
+            }
+        },
+        {
+            "airport_code": "GMC",
+            "airport_name": "Guerima",
+            "city_name": "Guerima",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 3.633333,
+            "longitude": -71.166667,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -71.166667,
+                "lat": 3.633333
+            }
+        },
+        {
+            "airport_code": "VGZ",
+            "airport_name": "Villagarzon",
+            "city_name": "Villagarzon",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 1.066667,
+            "longitude": -76.716667,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3665992",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -76.716667,
+                "lat": 1.066667
+            }
+        },
+        {
+            "airport_code": "GPI",
+            "airport_name": "Guapi",
+            "city_name": "Guapi",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 2.583333,
+            "longitude": -77.9,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3681505",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -77.9,
+                "lat": 2.583333
+            }
+        },
+        {
+            "airport_code": "MFB",
+            "airport_name": "Monfort",
+            "city_name": "Monfort",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 0.633332999999999,
+            "longitude": -69.75,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -69.75,
+                "lat": 0.633332999999999
+            }
+        },
+        {
+            "airport_code": "BHF",
+            "airport_name": "Bahia Cupica",
+            "city_name": "Bahia Cupica",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 6.55,
+            "longitude": -77.333333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -77.333333,
+                "lat": 6.55
+            }
+        },
+        {
+            "airport_code": "LPD",
+            "airport_name": "La Pedrera",
+            "city_name": "La Pedrera",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": -1.3,
+            "longitude": -69.716667,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -69.716667,
+                "lat": -1.3
+            }
+        },
+        {
+            "airport_code": "PUU",
+            "airport_name": "Puerto Asis",
+            "city_name": "Puerto Asis",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 0.5,
+            "longitude": -76.416667,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3671549",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -76.416667,
+                "lat": 0.5
+            }
+        },
+        {
+            "airport_code": "LGZ",
+            "airport_name": "Leguizamo",
+            "city_name": "Leguizamo",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": -0.183333,
+            "longitude": -74.75,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3671437",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -74.75,
+                "lat": -0.183333
+            }
+        },
+        {
+            "airport_code": "SQB",
+            "airport_name": "Santa Ana",
+            "city_name": "Santa Ana",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 4.766667,
+            "longitude": -75.95,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3682510",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -75.95,
+                "lat": 4.766667
+            }
+        },
+        {
+            "airport_code": "VAB",
+            "airport_name": "Yavarate",
+            "city_name": "Yavarate",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 1.116667,
+            "longitude": -70.75,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -70.75,
+                "lat": 1.116667
+            }
+        },
+        {
+            "airport_code": "ELJ",
+            "airport_name": "El Recreo",
+            "city_name": "El Recreo",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 2.0,
+            "longitude": -74.133333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -74.133333,
+                "lat": 2.0
+            }
+        },
+        {
+            "airport_code": "PSO",
+            "airport_name": "Cano",
+            "city_name": "Pasto",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 1.466667,
+            "longitude": -77.25,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3672778",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -77.25,
+                "lat": 1.466667
+            }
+        },
+        {
+            "airport_code": "PVA",
+            "airport_name": "Providencia",
+            "city_name": "Providencia",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 13.35,
+            "longitude": -81.35,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3671714",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -81.35,
+                "lat": 13.35
+            }
+        },
+        {
+            "airport_code": "PCR",
+            "airport_name": "Puerto Carreno",
+            "city_name": "Puerto Carreno",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 6.183333,
+            "longitude": -67.633333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3671519",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -67.633333,
+                "lat": 6.183333
+            }
+        },
+        {
+            "airport_code": "PTX",
+            "airport_name": "Pitalito",
+            "city_name": "Pitalito",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 1.85,
+            "longitude": -76.033333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3672110",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -76.033333,
+                "lat": 1.85
+            }
+        },
+        {
+            "airport_code": "SJG",
+            "airport_name": "San Pedro Jagua",
+            "city_name": "San Pedro Jagua",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 4.65,
+            "longitude": -73.333333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -73.333333,
+                "lat": 4.65
+            }
+        },
+        {
+            "airport_code": "URR",
+            "airport_name": "Urrao",
+            "city_name": "Urrao",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": 6.333333,
+            "longitude": -76.183333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "3666395",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -76.183333,
+                "lat": 6.333333
+            }
+        },
+        {
+            "airport_code": "ACM",
+            "airport_name": "Arica",
+            "city_name": "Arica",
+            "country_name": "Colombia",
+            "country_code": "CO",
+            "latitude": -2.133333,
+            "longitude": -71.783333,
+            "world_area_code": 327,
+            "city_name_geo_name_id": "\\N",
+            "country_name_geo_name_id": 3686121,
+            "coordinates": {
+                "lon": -71.783333,
+                "lat": -2.133333
+            }
+        }
+    ]
+}

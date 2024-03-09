@@ -1,0 +1,75 @@
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{#    <title>Historic Weather Graph</title>#}
+{#    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>Historic Weather Graph</h1>#}
+{#    <form action="/graph" method="post">#}
+{#        <select name="airport_code">#}
+{#            {% for code in airport_codes %}  <!-- Corrected from airport_code to airport_codes -->#}
+{#                <option value="{{ code[0] }}">{{ code[0] }}</option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+{#        <select name="weather_variable">#}
+{#            {% for variable in weather_variables %}#}
+{#                <option value="{{ variable }}">{{ variable.replace("_avg", "").capitalize() }}</option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+{#        <input type="submit" value="Generate Graph">#}
+{#    </form>#}
+{##}
+{#    {% if graph %}#}
+{#        <div id="graph"></div>#}
+{#        <script type="text/javascript">#}
+{#            var figures = {};#}
+{#            {% if graph %}#}
+{#                figures = JSON.parse({{ graph | tojson | safe }});#}
+{#                Plotly.newPlot('graph', figures.data, figures.layout);#}
+{#            {% endif %}#}
+{#        </script>#}
+{#    {% endif %}#}
+{#</body>#}
+{#</html>#}
+
+
+
+
+
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<h1>Historic Weather Graph</h1>
+<form action="/historic-plot" method="post">
+    <select name="airport_code">
+        {% for code in airport_codes %}
+            <option value="{{ code[0] }}">{{ code[0] }}</option>
+        {% endfor %}
+    </select>
+    <select name="weather_variable">
+        {% for variable in weather_variables %}
+            <option value="{{ variable }}">{{ variable.replace("_avg", "").capitalize() }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Generate Graph">
+</form>
+
+{% if graph %}
+    <div id="graph"></div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        var figures = {};
+        {% if graph %}
+            figures = JSON.parse({{ graph | tojson | safe }});
+            Plotly.newPlot('graph', figures.data, figures.layout);
+        {% endif %}
+    </script>
+{% endif %}
+{% endblock %}
