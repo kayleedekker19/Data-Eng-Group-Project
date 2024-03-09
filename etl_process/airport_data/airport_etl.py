@@ -34,10 +34,15 @@ def fetch_and_process_data(url):
 
 # Main function to orchestrate the ETL process
 def main():
-    spark_jars_path = os.getenv('SPARK_JARS_PATH')
+    # spark_jars_path = os.getenv('SPARK_JARS_PATH')
+    # spark = SparkSession.builder \
+    #     .appName("Airport Data ETL") \
+    #     .config("spark.jars", spark_jars_path) \
+    #     .getOrCreate()
+
     spark = SparkSession.builder \
         .appName("Airport Data ETL") \
-        .config("spark.jars", spark_jars_path) \
+        .config("spark.jars", "/app/libs/postgresql-42.7.2.jar") \
         .getOrCreate()
 
     base_url = os.getenv('API_BASE_URL')
