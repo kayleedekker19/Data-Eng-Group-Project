@@ -37,22 +37,7 @@ POLYGON = [(-140.0, 60.0), (-140.0, -60.0), (-10.0, -60.0), (-10.0, 60.0)]
 
 
 def sample_points(date: datetime, num_bins: int = NUM_BINS) -> Iterator[tuple]:
-    """Selects around the same number of points for every classification.
-
-    Since our labels are numeric continuous values, we convert them into
-    integers within a predifined range. Each integer value is treated
-    as a different classification.
-
-    From analyzing the precipitation data, most values are within 0 mm/hr
-    and 30 mm/hr of precipitation (rain and snow), but values above 30 mm/hr
-    still exist. So we clamp them to values to between 0 mm/hr and 30 mm/hr,
-    and then bucketize them.
-
-    We do the same for the elevation, and finally get a "unique" bin number
-    by combining the precipitation and elevation bins. We do this because
-    most of the precipitation values fall under elevation zero, so the data
-    would be extremely biased.
-
+    """
     Args:
         date: The date of interest.
         num_bins: Number of bins to bucketize values.
