@@ -1,0 +1,21 @@
+# Use Python 3.8 Slim as the base image to keep the image size down
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install Java 8 for Spark, as Spark requires Java
+RUN apt-get update && \
+    apt-get install -y openjdk-8-jre-headless && \
+    apt-get clean;
+# For the latest version of JAVA we would install openjdk-11-jre-headless
+
+# Copy the requirements file into the container and install Python dependencies
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of your application's code into the container
+COPY . /app/
+
+# Command to run your application
+CMD ["python", "airport_etl.py"]
