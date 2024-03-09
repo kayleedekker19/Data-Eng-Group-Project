@@ -111,7 +111,7 @@ def try_get_example(date: datetime, point: tuple) -> Iterator[tuple]:
     try:
         yield get_training_example(date, point)
     except (requests.exceptions.HTTPError, ee.ee_exception.EEException) as e:
-        logging.error(f"🛑 failed to get example: {date} {point}")
+        logging.error(f" failed to get example: {date} {point}")
         logging.exception(e)
 
 
