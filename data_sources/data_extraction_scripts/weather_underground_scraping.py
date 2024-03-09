@@ -50,7 +50,7 @@ def fetch_table_html(driver, xpath, wait_time=40):
 
 def scrape_weather_data(location, start_year, end_year):
     """Scrapes weather data for a given location and date range, then saves to Parquet."""
-    output_dir = "/data_sources/manual_data_collected/historic_data"
+    output_dir = "/Users/kayleedekker/PycharmProjects/DataEngineeringProject/data_sources/manual_data_collected/historic_data"
     os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
 
     for year in range(start_year, end_year + 1):
@@ -146,7 +146,7 @@ def process_airport_codes(airport_codes):
 
 def main():
     # Read airport codes from JSON
-    airport_codes = read_airport_codes("../manual_data_collected/airports_data.json")
+    # airport_codes = read_airport_codes("../manual_data_collected/airports_data.json")
     # working_codes = process_airport_codes(airport_codes)
 
     working_codes = [

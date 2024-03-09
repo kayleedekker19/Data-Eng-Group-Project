@@ -95,6 +95,25 @@ def print_all_rows_in_table(connection, table_name):
         print(row)
 
 # Can add query functions here
+def print_rows_by_airport_code(connection, table_name, airport_code):
+    """
+    Print rows in a given table filtered by an airport_code.
+    """
+    cursor = connection.cursor()
+
+    # Use a parameterized query for safety against SQL injection
+    query = f"SELECT * FROM {table_name} WHERE airport_code = %s"
+    cursor.execute(query, (airport_code,))
+
+    rows = cursor.fetchall()
+
+    if rows:
+        print(f"Rows in table {table_name} for airport code '{airport_code}':")
+        for row in rows:
+            print(row)
+    else:
+        print(f"No rows found for airport code '{airport_code}' in table {table_name}.")
+
 
 def main():
     try:
@@ -114,12 +133,15 @@ def main():
                 print(f"    Column: {column[0]} - Type: {column[1]}")
             print("\n")
 
-        # # Example usage of get_weather_forecast_by_airport function
-        # airport_code = "TEH"  # Replace with the desired airport code
-        # forecast_data = get_weather_forecast_by_airport(connection, airport_code)
-        # print("Weather forecast data for airport", airport_code)
-        # for row in forecast_data:
-        #     print(row)
+        # Test airport row function
+        print_rows_by_airport_code(connection, 'airports', 'ACK')
+
+        # Example usage of get_weather_forecast_by_airport function
+        airport_code = "TEH"  # Replace with the desired airport code
+        forecast_data = get_weather_forecast_by_airport(connection, airport_code)
+        print("Weather forecast data for airport", airport_code)
+        for row in forecast_data:
+            print(row)
 
         # Example usage of print_all_rows_in_table function
         # table_name = "historic_weather"  # Replace with the desired table name
