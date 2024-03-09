@@ -1,4 +1,4 @@
-"""Creates a dataset - getting it ready to train a machine learning model."""
+"""Creates a dataset - getting it ready to train a machine learning model and uploads into GCS."""
 
 from __future__ import annotations
 
