@@ -29,8 +29,8 @@ MAX_ELEVATION = 6000  # found empirically
 PATCH_SIZE = 5  # fetching data from a 5x5 pixel area around each geographic point - effects granularity of data
 END_DATE = datetime.now() - timedelta(days=30)  # setting to 30 days before current time
 
-# Set the start date to 5 days before the END_DATE
-START_DATE = END_DATE - timedelta(days=30)  # to get more data points: START_DATE = datetime(2024, 1, 1)
+# Set the start date
+START_DATE = datetime(2023, 1, 1)  # START_DATE = END_DATE - timedelta(days=30)  to get less data points
 
 # Define a geographic area of interest as a list of (longitude, latitude) pairs
 POLYGON = [(-140.0, 60.0), (-140.0, -60.0), (-10.0, -60.0), (-10.0, 60.0)]
@@ -129,8 +129,6 @@ def run(
     """Runs an Apache Beam pipeline to create a dataset.
 
     This fetches data from Earth Engine and writes compressed NumPy files.
-    We use `max_requests` to limit the number of concurrent requests to Earth Engine
-    to avoid quota issues.
 
     Args:
         data_path: Directory path to save the data files.
