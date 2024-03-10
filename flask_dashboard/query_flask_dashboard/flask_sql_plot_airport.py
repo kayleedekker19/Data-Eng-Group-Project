@@ -42,11 +42,13 @@ def create_figure():
     df = pd.DataFrame(data, columns=columns)
 
     # List of airport codes to exclude
+    # API data fetured incorrect coordinates, so these airports appeared in other continents
     excluded_airport_codes = ['ZWI', 'TEH', 'OIA', 'TCS', 'SZL', 'PUO', 'YUB', 'YTK']
 
     # Filter out the rows with the excluded airport codes
     df = df[~df['airport_code'].isin(excluded_airport_codes)]
 
+    #obtained mapbox token to make the graph pretty
     mapbox_access_token = 'pk.eyJ1Ijoia2FydGFncmFtIiwiYSI6ImNsdGl3ZjhhdTBqZDQyaXBoeHdqZmZvY2MifQ.lAX-1WPYrpKX97HBk4ppAw'
 
     fig = px.scatter_mapbox(
@@ -59,6 +61,7 @@ def create_figure():
         height=900,
         width=1200
     )
+
 
     fig.update_layout(
         mapbox_style="light",
