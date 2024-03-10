@@ -9,6 +9,7 @@ from flask_google_earth import show_map as google_earth_show
 
 app = Flask(__name__)
 
+#Insert visualizations here
 # Google Earth Map
 @app.route('/', methods=['GET', 'POST'])
 def google_earth_map():
