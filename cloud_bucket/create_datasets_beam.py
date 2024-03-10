@@ -18,7 +18,7 @@ import numpy as np
 import requests
 
 # Default values.
-NUM_DATES = 10  # We could randomly sample 100 dates from a wider range, but here we specify 10 to reduce data size
+NUM_DATES = 15  # We could randomly sample 100 dates from a wider range, but here we specify 10 to reduce data size
 MAX_REQUESTS = 10  # 20 is the default EE request quota
 MIN_BATCH_SIZE = 20  # The min number of examples grouped together in each .npz file
 
