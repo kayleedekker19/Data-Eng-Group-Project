@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  airport_etl:
+    image: kayleedekker19/airport_etl:latest
+    build:
+      context: .
+      dockerfile: DockerfileAirport
+    environment:
+      API_BASE_URL: ${API_BASE_URL}
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_USER: ${DATABASE_USER}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+
+  forecast_etl:
+    image: kayleedekker19/forecast_etl:latest
+    build:
+      context: .
+      dockerfile: DockerfileForecast
+    environment:
+      API_BASE_URL: ${API_BASE_URL}
+      FORECAST_API_KEY: ${FORECAST_API_KEY}
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_USER: ${DATABASE_USER}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+
+  historic_etl:
+    image: kayleedekker19/historic_etl:latest
+    build:
+      context: .
+      dockerfile: DockerfileHistoric
+    environment:
+      HISTORIC_DATA_PATH: ${HISTORIC_DATA_PATH}
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_USER: ${DATABASE_USER}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
