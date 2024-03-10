@@ -5,7 +5,6 @@ trained on exactly the same data that will be used for predictions.
 
 from datetime import datetime, timedelta
 import io
-from typing import List
 import ee
 from google.api_core import exceptions, retry
 import google.auth
@@ -56,7 +55,7 @@ def get_gpm(date: datetime) -> ee.Image:
     )
 
 
-def get_gpm_sequence(dates: List[datetime]) -> ee.Image:
+def get_gpm_sequence(dates: list[datetime]) -> ee.Image:
     """Gets a Global Precipitation Measurement sequence for the selected dates.
     Args:
         dates: List of dates to get images from.
@@ -87,7 +86,7 @@ def get_goes16(date: datetime) -> ee.Image:
     )
 
 
-def get_goes16_sequence(dates: List[datetime]) -> ee.Image:
+def get_goes16_sequence(dates: list[datetime]) -> ee.Image:
     """Gets a GOES 16 sequence for the selected dates.
 
     Args:
