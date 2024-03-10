@@ -1,6 +1,4 @@
-"""Data utilities to grab data from Earth Engine.
-Meant to be used for both training and prediction so the model is
-trained on exactly the same data that will be used for predictions.
+"""Data extraction function to get data from Earth Engine.
 """
 
 from datetime import datetime, timedelta
