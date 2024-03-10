@@ -101,9 +101,6 @@ def get_goes16_sequence(dates: list[datetime]) -> ee.Image:
 def get_elevation() -> ee.Image:
     """Gets a digital elevation map.
 
-    For more information:
-        https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3
-
     Returns: An Earth Engine image.
     """
     return ee.Image("MERIT/DEM/v1_0_3").rename("elevation").unmask(0).float()
@@ -194,7 +191,6 @@ def get_patch(image: ee.Image, point: tuple, patch_size: int, scale: int) -> np.
         }
     )
 
-    # If we get "429: Too Many Requests" errors, it's safe to retry the request.
     # The Retry library only works with `google.api_core` exceptions.
     response = requests.get(url)
     if response.status_code == 429:
