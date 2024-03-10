@@ -120,34 +120,7 @@ def show_maps():
     inputs_map_url = '/' + inputs_map_path
     labels_map_url = '/' + labels_map_path
 
-    # # Embed maps using iframes with the correct src URLs
-    # embedded_maps_html = f'''
-    # <!DOCTYPE html>
-    # <html>
-    # <head>
-    #     <title>Maps Display</title>
-    #     <style>
-    #         .map-container {{
-    #             display: flex;
-    #             justify-content: space-around;
-    #             flex-wrap: wrap;
-    #         }}
-    #         iframe {{
-    #             width: 45%;
-    #             height: 400px;
-    #             border: none;
-    #             margin: 10px;
-    #         }}
-    #     </style>
-    # </head>
-    # <body>
-    #     <div class="map-container">
-    #         <iframe src="{inputs_map_url}"></iframe>
-    #         <iframe src="{labels_map_url}"></iframe>
-    #     </div>
-    # </body>
-    # </html>
-    # '''
+
 
 
     # Embed maps using iframes with the correct src URLs and add titles
