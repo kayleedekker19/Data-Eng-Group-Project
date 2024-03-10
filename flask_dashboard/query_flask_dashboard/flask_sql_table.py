@@ -1,9 +1,3 @@
-
-import os
-from dotenv import load_dotenv
-from flask import Flask, render_template, request
-import psycopg2
-
 # Initialize Flask application
 app = Flask(__name__)
 
@@ -55,23 +49,6 @@ def show_query_table():
         time = request.form.get('time')
         weather_data = get_weather_forecast(connection, airport_code, date, time)
     return render_template('query_table.html', airport_codes=airport_codes, unique_dates=unique_dates, weather_data=weather_data, time_options=time_options)
-
-
-# connection = get_db_connection()
-# get_weather_forecast(connection, 'ERM', date, time)
-
-# def dashboard():
-#     connection = get_db_connection()
-#     airport_codes = get_airport_codes(connection)
-#     unique_dates = get_unique_dates(connection)  # Retrieve unique dates
-#     time_options = ['00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00']
-#     weather_data = []
-#     if request.method == 'POST':
-#         airport_code = request.form.get('airport_code')
-#         date = request.form.get('date')
-#         time = request.form.get('time')
-#         weather_data = get_weather_forecast(connection, airport_code, date, time)
-#     return render_template('query_table.html', airport_codes=airport_codes, unique_dates=unique_dates, weather_data=weather_data, time_options=time_options)
 
 
 if __name__ == '__main__':
