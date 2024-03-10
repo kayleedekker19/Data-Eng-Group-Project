@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: DockerfileHistoric
     environment:
-      HISTORIC_DATA_PATH: ${HISTORIC_DATA_PATH}
+      HISTORIC_DATA_PATH: "./data_sources/manual_data_collected/historic_data"
       DATABASE_URL: ${DATABASE_URL}
       DATABASE_USER: ${DATABASE_USER}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
