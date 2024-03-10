@@ -62,7 +62,7 @@ def create_figure():
         width=1200
     )
 
-
+    #make map visually appealing and bigger on the webpage
     fig.update_layout(
         mapbox_style="light",
         mapbox_accesstoken=mapbox_access_token,
