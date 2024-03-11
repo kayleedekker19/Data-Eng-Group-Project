@@ -2,16 +2,16 @@
 
 ## Project Introduction
 
-This repository is for our Data Engineering project, an project for gaining practical experience with key technologies and designing scalable solutions in line with best practices. Our project serves the aviation industry by developing capabilities for making informed weather-related decisions. It consists of two main components:
+This repository is for our Data Engineering project, a project for gaining practical experience with key technologies and designing scalable solutions in line with best practices. Our project serves the aviation industry by developing capabilities for making informed weather-related decisions. It consists of two main components:
 1. **Data Pipeline Development**: We construct a data pipeline that facilitates data scientists in creating predictive models based on satellite imagery for weather forecasting.
 2. **Relational Database Construction**: We build a comprehensive database by collecting data from three sources: airport and forecast data via APIs, and historic weather data through web scraping. This enables the holistic storage and analysis of aviation-related weather information.
 
 ## Objectives
 
 - Implementing scalable data pipeline architecture.
+- Utilizing a variety of technologies and tools, such as cloud-based solutions.
 - Creating replicable environments using Docker.
 - Employing version control with Git.
-- Utilizing a variety of technologies and tools, such as cloud-based solutions.
 
 ## Tools and Technologies
 
