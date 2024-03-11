@@ -17,6 +17,12 @@ load_dotenv()
 def extract_airport_code_and_coordinates(json_filename):
     """
     Extracts airport codes and coordinates from the provided JSON structure.
+
+    Parameters:
+    - json_filename (str): The filename of the JSON file containing airport data.
+
+    Returns:
+    List[Tuple[str, float, float]]: A list of tuples containing airport code, latitude, and longitude.
     """
     extracted_data = []
     try:
@@ -34,6 +40,16 @@ def extract_airport_code_and_coordinates(json_filename):
     return extracted_data
 
 def fetch_weather_forecast(api_key, locations):
+    """
+    Fetches weather forecasts for specified locations from the OpenWeatherMap API.
+
+    Parameters:
+    - api_key (str): The API key for accessing the OpenWeatherMap API.
+    - locations (List[Tuple[str, float, float]]): A list of tuples containing airport code, latitude, and longitude.
+
+    Returns:
+    List[Dict]: A list of dictionaries containing forecast data for each specified location.
+    """
     all_forecasts = []
     for airport_code, lat, lon in locations:
         url = f"http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
@@ -48,20 +64,32 @@ def fetch_weather_forecast(api_key, locations):
     return all_forecasts
 
 def save_forecasts_to_json(forecasts, output_filename):
+    """
+    Saves the fetched weather forecasts to a JSON file.
+
+    Parameters:
+    - forecasts (List[Dict]): A list of dictionaries containing forecast data.
+    - output_filename (str): The filename for the output JSON file.
+    """
     with open(output_filename, 'w') as file:
         json.dump(forecasts, file, indent=4)
 
 def main():
+    """
+    Main function orchestrating the execution of the script.
+    """
     json_filename = '../manual_data_collected/airports_data.json'
     output_filename = '../manual_data_collected/weather_forecasts.json'
     api_key = os.getenv('FORECAST_API_KEY')
 
+    # Extract airport codes and coordinates from the JSON file
     locations = extract_airport_code_and_coordinates(json_filename)
 
-    # Let's decide how many locations we want to sample (for example, 10)
+    # Decide how many locations to sample and fetch weather forecasts
     sample_size = 10
     sampled_locations = random.sample(locations, min(sample_size, len(locations)))
 
+    # Save the fetched forecasts to a JSON file
     forecasts = fetch_weather_forecast(api_key, sampled_locations)
     save_forecasts_to_json(forecasts, output_filename)
     print(f"Saved all forecasts to {output_filename}")
