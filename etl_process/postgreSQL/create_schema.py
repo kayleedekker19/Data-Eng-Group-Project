@@ -19,7 +19,7 @@ def recreate_database_schema(connection):
     for query in drop_tables_queries:
         cursor.execute(query)
 
-    # Create new tables
+    # Create new tables to match schema
     create_tables_queries = [
         """
         CREATE TABLE airports (
@@ -93,7 +93,7 @@ def recreate_database_schema(connection):
     for query in create_tables_queries:
         cursor.execute(query)
 
-    # Commit changes
+    # Commit changes and check that the database was recreated successfully
     connection.commit()
     print("Database schema recreated successfully.")
 
