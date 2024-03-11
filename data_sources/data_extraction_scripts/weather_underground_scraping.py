@@ -21,7 +21,7 @@ def init_webdriver():
 
 
 def accept_cookies(driver):
-    """Navigates cookie consent iframe and accepts cookies, with increased wait time and debugging."""
+    """Navigates to the cookie consent iframe and accepts, with a wait time to allow for the webdriver to load."""
     try:
         WebDriverWait(driver, 40).until(
             EC.frame_to_be_available_and_switch_to_it((By.XPATH, '//*[@id="sp_message_iframe_977869"]')))
@@ -30,16 +30,12 @@ def accept_cookies(driver):
         driver.switch_to.default_content()
     except (NoSuchElementException, TimeoutException) as e:
         print("Error accepting cookies or locating iframe:", e)
-        # Debugging: You might want to take a screenshot or dump the page source here.
-        # driver.save_screenshot("debug_screenshot.png")
-        # with open("debug_page.html", "w") as f:
-        #     f.write(driver.page_source)
         driver.quit()
         raise
 
 
 def fetch_table_html(driver, xpath, wait_time=40):
-    """Fetches and returns the HTML of a table specified by the xpath, with increased wait time for reliability."""
+    """Fetches and returns the HTML of a table specified by the xpath, again increased wait time for reliability."""
     try:
         table_element = WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPATH, xpath)))
         return table_element.get_attribute("outerHTML")
@@ -49,13 +45,13 @@ def fetch_table_html(driver, xpath, wait_time=40):
         raise
 
 def scrape_weather_data(location, start_year, end_year):
-    """Scrapes weather data for a given location and date range, then saves to Parquet."""
+    """Scrapes weather data for a given location and date range, then saves to Parquet. Year format XXXX."""
     output_dir = "/Users/kayleedekker/PycharmProjects/DataEngineeringProject/data_sources/manual_data_collected/historic_data"
     os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
 
     for year in range(start_year, end_year + 1):
-        for month in range(1, 13):  # Loop through all months
-            try:  # Add a try block to catch any exceptions
+        for month in range(1, 13):  # Loop through all months 1 to 12
+            try:  # Catch any exceptions
                 date = f'{year}-{month}'
                 url = f'https://www.wunderground.com/history/monthly/{location}/date/{date}'
                 driver = init_webdriver()
@@ -63,7 +59,7 @@ def scrape_weather_data(location, start_year, end_year):
                 accept_cookies(driver)
 
                 result_dfs = []
-                for i in range(3, 10):  # Adjust based on the number of tables you're interested in
+                for i in range(3, 10):  # On the scraped webpage, tables 3 to 9 were of interest
                     try:
                         table_html = fetch_table_html(driver, f'(//table)[{i}]')
                         df = pd.read_html(StringIO(table_html))[0]
@@ -77,9 +73,9 @@ def scrape_weather_data(location, start_year, end_year):
                     continue
 
                 result = pd.concat(result_dfs, axis=1)
-                result = result.iloc[1:]  # Adjust based on the actual header row position
-
-                new_column_names = [  # Define or adjust column names as needed
+                result = result.iloc[1:]  # Remove first row, old sub-column names, but will be renamed next
+                # Define new column names to fit the scraped data
+                new_column_names = [
                     'Date', 'Temperature (°F), max', 'Temperature (°F), avg', 'Temperature (°F), min',
                     'Dew Point (°F), max', 'Dew Point (°F), avg', 'Dew Point (°F), min',
                     'Humidity (%), max', 'Humidity (%), avg', 'Humidity (%), min',
@@ -88,11 +84,11 @@ def scrape_weather_data(location, start_year, end_year):
                     'Precipitation (in)'
                 ]
 
-                # Check if the number of new columns matches the dataframe's columns
+                # Check if the number of new columns names matches the dataframe's columns
                 if len(result.columns) != len(new_column_names):
                     print(
                         f"Column length mismatch: Dataframe has {len(result.columns)}, but trying to set {len(new_column_names)}")
-                    continue  # Skip saving this result due to mismatch
+                    continue
 
                 result.columns = new_column_names
                 filename = os.path.join(output_dir, f"{location}_{date}.parquet")
@@ -101,10 +97,9 @@ def scrape_weather_data(location, start_year, end_year):
 
             except Exception as e:  # Catch any error that occurs within the loop
                 print(f"An error occurred for {location} in {year}-{month}: {e}")
-                continue  # Continue to the next iteration
+                continue
             finally:
                 driver.quit()  # Ensure the driver is quit even if there's an error
-
 
 
 def read_airport_codes(json_filename):
@@ -129,7 +124,9 @@ def check_airport_code(url):
         driver.quit()
     return True
 
+
 def process_airport_codes(airport_codes):
+    """Processes all airport codes from JSON file and checks whether they work"""
     working_codes = []
     non_working_codes = []
 
@@ -144,11 +141,12 @@ def process_airport_codes(airport_codes):
     # print(f"Number of non-working codes: {len(non_working_codes)}")
     return working_codes
 
+
 def main():
-    # Read airport codes from JSON
+    # For full data analysis - Read airport codes from JSON
     # airport_codes = read_airport_codes("../manual_data_collected/airports_data.json")
     # working_codes = process_airport_codes(airport_codes)
-
+    # To minimize current gathered data, working codes provided already
     working_codes = [
         'OMA', 'JHM', 'IML', 'KMO', 'ACK', 'SZL', 'EMP', 'FRI', 'TCS', 'PAO', 'POE', 'OTM', 'WNA', 'SPS', 'KKB',
         'ATL', 'DAL', 'ABI', 'MEI', 'MRF', 'DRE', 'FDY', 'LCH', 'LRJ', 'GED', 'BKD', 'FSI', 'DAG', 'JOT', 'MDJ',
@@ -164,22 +162,12 @@ def main():
     start_year = 2023
     end_year = 2023
 
-    # Randomly select 5 airport codes
+    # Randomly select airport codes - to minimize gathered data
     selected_codes = random.sample(working_codes, 1)
     print(selected_codes)
 
     for airport_code in selected_codes:
         scrape_weather_data(airport_code, start_year, end_year)
-
-    # # Define the range of years you're interested in
-    # start_year = 2023
-    # end_year = 2023
-    #
-    # # Loop through every xth airport code
-    # x = 22  # Change depending on how much data - to minimise data we are only gathering data for every 5th airport code
-    # for i in range(0, len(working_codes), x):
-    #     airport_code = working_codes[i]
-    #     scrape_weather_data(airport_code, start_year, end_year)
 
 
 if __name__ == "__main__":
