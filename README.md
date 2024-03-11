@@ -56,7 +56,7 @@ This separation was a deliberate decision to combat potential dependency issues 
 - **Visualization and Querying**:
   - `Flask_dashboard/query_flask_dashboard` for dashboard scripts.
 
-### Data Collection and Processing
+## Data Collection and Processing
 
 Our approach utilizes APIs and web scraping to collect data, as well as the use of three sources from Google Earth Engine for satellite images. This diverse method of data collection enables us to build a rich dataset for our data pipeline and relational database, and work with data in different formats.
 
