@@ -15,9 +15,9 @@ RUN apt-get update && apt-get install -y curl gnupg && \
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg  add - && \
     apt-get update -y && apt-get install google-cloud-sdk -y
 
-# Copy the requirements.txt file and install Python dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Copy the requirements_dataflow.txt file and install Python dependencies
+COPY requirements_dataflow.txt .
+RUN pip install -r requirements_dataflow.txt
 
 # Copy your application code into the container
 COPY weather-data/ /app/weather-data/

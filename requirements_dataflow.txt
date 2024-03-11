@@ -1,0 +1,4 @@
+requests~=2.31.0
+earthengine-api==0.1.392
+numpy
+apache-beam[gpc]==2.54.0

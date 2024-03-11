@@ -29,9 +29,9 @@ RUN apt-get update && apt-get install -y curl gnupg && \
 # Decode the service account key and save it to a file
 RUN echo "$GCP_SA_KEY" | base64 --decode > ${GOOGLE_APPLICATION_CREDENTIALS}
 
-# Copy the requirements.txt file and install Python dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Copy the requirements_dataflow.txt file and install Python dependencies
+COPY requirements_dataflow.txt .
+RUN pip install -r requirements_dataflow.txt
 
 # Copy your application code into the container
 COPY weather-data/ /app/weather-data/
