@@ -197,6 +197,7 @@ def main():
     )
 
     # Display the first 20 rows of all DataFrames and their shapes
+    # to check all transformations are correct
     airports_df.show()
     forecasts_df.show()
     historic_df.show()
@@ -217,7 +218,7 @@ def main():
         "driver": "org.postgresql.Driver"
     }
 
-    # # Write DataFrames to PostgreSQL
+    # # Populate DataFrames to PostgreSQL
     airports_df.write.jdbc(url=jdbc_url, table="airports", mode="overwrite", properties=connection_properties)
     forecasts_df.write.jdbc(url=jdbc_url, table="weather_forecasts", mode="overwrite", properties=connection_properties)
     historic_df.write.jdbc(url=jdbc_url, table="historic_weather", mode="append", properties=connection_properties)
