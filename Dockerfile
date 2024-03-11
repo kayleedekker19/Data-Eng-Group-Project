@@ -1,10 +1,6 @@
-FROM ubuntu:latest
-LABEL authors="kayleedekker"
-
-ENTRYPOINT ["top", "-b"]
-
 # Use Python 3.8 Slim Buster as the base image
 FROM python:3.8-slim-buster
+LABEL authors="kayleedekker"
 
 # Set working directory in the Docker container
 WORKDIR /app
