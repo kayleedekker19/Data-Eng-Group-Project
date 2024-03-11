@@ -15,7 +15,7 @@ def init_webdriver():
 
 
 def check_airport_code(url):
-    """Checks if the webpage for the given URL loads successfully or returns an error."""
+    """Checks if the webpage for the given URL loads successfully or returns error."""
     driver = init_webdriver()
     try:
         driver.get(url)
