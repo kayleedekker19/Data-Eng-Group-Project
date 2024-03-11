@@ -1,6 +1,16 @@
 import requests
 import json
 
+"""
+This script fetches airport data from the Datasoft API for selected countries in North and South America, 
+processes the data by renaming the 'column_1' to 'airport_code,'and then saves the modified data to a JSON file. 
+The processed data includes critical information about airport locations and their corresponding codes. 
+
+Usage:
+- Ensure you have the required libraries installed: `requests` and `json`.
+- Run the script to fetch, process, and save airport data to 'airports_data_2.json'.
+"""
+
 def fetch_and_process_data(url):
     # Make the API request
     response = requests.get(url)
@@ -38,7 +48,10 @@ def save_data_to_json(data, filename):
     print(f"Data successfully saved to {filename}")
 
 def main():
+    # Define the base URL for API requests
     base_url = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets"
+
+    # Specify URLs for different countries, limiting the number of records
     urls = [
         f"{base_url}/airports-code/records?limit=50&refine=country_name%3A%22United%20States%22",
         f"{base_url}/airports-code/records?limit=20&refine=country_name%3A%22Canada%22",
@@ -50,11 +63,13 @@ def main():
     ]
     all_data = {"results": []}  # Initialize a dictionary to hold all data
 
+    # Iterate through the specified URLs and fetch/process data
     for url in urls:
         processed_data = fetch_and_process_data(url)
         if processed_data is not None:
             all_data["results"].extend(processed_data["results"])  # Append the results from each URL to the all_data list
 
+    # Check if there is data and save it to a JSON file
     if all_data["results"]:
         save_data_to_json(all_data, "../not_needed_py_files/airports_data_2.json")
 
