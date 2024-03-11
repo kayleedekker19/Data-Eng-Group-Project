@@ -1,5 +1,5 @@
 # This script is to interact with our database
-# It's help to run tests on this
+# Helpful to run tests on this to ensure everything works as intended
 
 # Load libraries
 import psycopg2
@@ -142,10 +142,6 @@ def main():
         print("Weather forecast data for airport", airport_code)
         for row in forecast_data:
             print(row)
-
-        # Example usage of print_all_rows_in_table function
-        # table_name = "historic_weather"  # Replace with the desired table name
-        # print_all_rows_in_table(connection, table_name)
 
     except (Exception, psycopg2.Error) as error:
         print("Error while connecting to PostgreSQL:", error)
