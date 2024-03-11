@@ -24,6 +24,8 @@ def init_webdriver():
     driver.maximize_window()
     return driver
 
+# For larger amounts of data/scraping, headless mode can be used to run the webdriver without  visible browser window.
+# Allows for faster execution and reduced resource consumption
 # def init_webdriver():
 #     """Initializes and returns a Chrome WebDriver with headless mode."""
 #     chrome_options = Options()
@@ -33,7 +35,7 @@ def init_webdriver():
 #     return driver
 
 def accept_cookies(driver):
-    """Navigates cookie consent iframe and accepts cookies, with increased wait time and debugging."""
+    """Navigates to cookie consent iframe and accepts, with a wait time to allow for the webdriver to load."""
     try:
         WebDriverWait(driver, 40).until(
             EC.frame_to_be_available_and_switch_to_it((By.XPATH, '//*[@id="sp_message_iframe_977869"]')))
@@ -51,7 +53,7 @@ def accept_cookies(driver):
 
 
 def fetch_table_html(driver, xpath, wait_time=40):
-    """Fetches and returns the HTML of a table specified by the xpath, with increased wait time for reliability."""
+    """Fetches and returns the HTML of a table specified by the xpath, again increased wait time for reliability."""
     try:
         table_element = WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPATH, xpath)))
         return table_element.get_attribute("outerHTML")
@@ -71,8 +73,8 @@ def scrape_weather_data(location, start_year, end_year):
     bucket = client.bucket(BUCKET_NAME)
 
     for year in range(start_year, end_year + 1):
-        for month in range(1, 13):  # Loop through all months
-            try:
+        for month in range(1, 13):  # Loop through all months 1 to 12
+            try:  # Catch any exceptions
                 date = f'{year}-{month}'
                 url = f'https://www.wunderground.com/history/monthly/{location}/date/{date}'
                 driver = init_webdriver()
@@ -80,7 +82,7 @@ def scrape_weather_data(location, start_year, end_year):
                 accept_cookies(driver)
 
                 result_dfs = []
-                for i in range(3, 10):
+                for i in range(3, 10):  # On the scraped webpage, tables 3 to 9 were of interest
                     try:
                         table_html = fetch_table_html(driver, f'(//table)[{i}]')
                         df = pd.read_html(StringIO(table_html))[0]
@@ -89,13 +91,13 @@ def scrape_weather_data(location, start_year, end_year):
                         print(f"Error processing table {i}: ", e)
                         continue
 
-                if not result_dfs:
+                if not result_dfs:  # Check if the list is empty
                     print(f"No data found for {location} in {date}. Skipping.")
                     continue
 
                 result = pd.concat(result_dfs, axis=1)
-                result = result.iloc[1:]
-
+                result = result.iloc[1:]  # Remove first row, old sub-column names, but will be renamed next
+                # Define new column names to fit the scraped data
                 new_column_names = [
                     'Date', 'Temperature (°F), max', 'Temperature (°F), avg', 'Temperature (°F), min',
                     'Dew Point (°F), max', 'Dew Point (°F), avg', 'Dew Point (°F), min',
@@ -104,7 +106,7 @@ def scrape_weather_data(location, start_year, end_year):
                     'Pressure (in), max', 'Pressure (in), avg', 'Pressure (in), min',
                     'Precipitation (in)'
                 ]
-
+                # Check if the number of new columns names matches the dataframe's columns
                 if len(result.columns) != len(new_column_names):
                     print(
                         f"Column length mismatch: Dataframe has {len(result.columns)}, but trying to set {len(new_column_names)}"
@@ -152,6 +154,7 @@ def check_airport_code(url):
     return True
 
 def process_airport_codes(airport_codes):
+    """Processes all airport codes from JSON file and checks whether they work"""
     working_codes = []
     non_working_codes = []
 
@@ -167,10 +170,10 @@ def process_airport_codes(airport_codes):
     return working_codes
 
 def main():
-    # Read airport codes from JSON
-    # airport_codes = read_airport_codes("airports_data.json")
+    # For full data analysis - Read airport codes from JSON
+    # airport_codes = read_airport_codes("../manual_data_collected/airports_data.json")
     # working_codes = process_airport_codes(airport_codes)
-
+    # To minimize current gathered data, working codes provided already
     working_codes = [
         'OMA', 'JHM', 'IML', 'KMO', 'ACK', 'SZL', 'EMP', 'FRI', 'TCS', 'PAO', 'POE', 'OTM', 'WNA', 'SPS', 'KKB',
         'ATL', 'DAL', 'ABI', 'MEI', 'MRF', 'DRE', 'FDY', 'LCH', 'LRJ', 'GED', 'BKD', 'FSI', 'DAG', 'JOT', 'MDJ',
@@ -186,7 +189,7 @@ def main():
     start_year = 2023
     end_year = 2023
 
-    # Randomly select 5 airport codes
+    # Randomly select airport codes - to minimize gathered data
     selected_codes = random.sample(working_codes, 1)
     print(f"The selected codes are: {selected_codes}")
 
