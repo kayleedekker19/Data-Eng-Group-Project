@@ -13,7 +13,7 @@ def init_webdriver():
     return driver
 
 def check_airport_code(url):
-    """Checks if the webpage for the given URL loads successfully or returns an error."""
+    """Checks if the webpage for the given URL loads successfully or returns error."""
     driver = init_webdriver()
     try:
         driver.get(url)
@@ -28,6 +28,7 @@ def check_airport_code(url):
     return True
 
 def process_airport_codes(airport_codes):
+    """Processes all airport codes from JSON file and checks whether they work"""
     working_codes = []
     non_working_codes = []
 
@@ -53,7 +54,7 @@ def main():
     airport_codes = read_airport_codes(json_filename)
     working_codes, non_working_codes = process_airport_codes(airport_codes)
 
-    # Optional: Print or process the lists of working and non-working airport codes as needed
+    # Print lists of working and non-working airport codes
     print(f"Working codes: {working_codes}")
     print(f"Non-working codes: {non_working_codes}")
 
