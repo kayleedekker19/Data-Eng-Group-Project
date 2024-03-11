@@ -6,11 +6,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import WebDriverException
 import json
 
+
 def init_webdriver():
     """Initializes and returns a Chrome WebDriver."""
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.maximize_window()
     return driver
+
 
 def check_airport_code(url):
     """Checks if the webpage for the given URL loads successfully or returns an error."""
@@ -27,7 +29,9 @@ def check_airport_code(url):
         driver.quit()
     return True
 
+
 def process_airport_codes(airport_codes):
+    """Processes all airport codes from JSON file and checks whether they work"""
     working_codes = []
     non_working_codes = []
 
@@ -42,20 +46,23 @@ def process_airport_codes(airport_codes):
     print(f"Number of non-working codes: {len(non_working_codes)}")
     return working_codes, non_working_codes
 
+
 def read_airport_codes(json_filename):
     """Reads airport codes from a given JSON file."""
     with open(json_filename, 'r') as file:
         data = json.load(file)
     return [item['airport_code'] for item in data.get('results', [])]
 
+
 def main():
     json_filename = "/Users/kayleedekker/PycharmProjects/DataEngineeringProject/data_sources/manual_data_collected/airports_data.json"
     airport_codes = read_airport_codes(json_filename)
     working_codes, non_working_codes = process_airport_codes(airport_codes)
 
-    # Optional: Print or process the lists of working and non-working airport codes as needed
+    # Print lists of working and non-working airport codes
     print(f"Working codes: {working_codes}")
     print(f"Non-working codes: {non_working_codes}")
+
 
 if __name__ == "__main__":
     main()
