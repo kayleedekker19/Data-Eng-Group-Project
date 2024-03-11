@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Forecast Dashboard</h1>
+    <form action="/" method="post">
+        <select name="airport_code">
+            {% for code in airport_codes %}
+                <option value="{{ code[0] }}">{{ code[0] }}</option>
+            {% endfor %}
+        </select>
+        <select name="date">
+            {% for date in unique_dates %}
+                <option value="{{ date[0] }}">{{ date[0] }}</option>
+            {% endfor %}
+        </select>
+        <select name="time">
+            {% for time in time_options %}
+                <option value="{{ time }}">{{ time }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Get Forecast">
+    </form>
+    {% if weather_data %}
+        <div style="overflow-x:auto;">
+            <table>
+                {% for data in weather_data %}
+                    <tr><th>Airport Code</th><td>{{ data[0] }}</td></tr>
+                    <tr><th>Datetime</th><td>{{ data[1] }}</td></tr>
+                    <tr><th>Temperature</th><td>{{ data[2] }}</td></tr>
+                    <tr><th>Wind Speed</th><td>{{ data[3] }}</td></tr>
+                    <tr><th>Wind Degree</th><td>{{ data[4] }}</td></tr>
+                    <tr><th>Wind Gust</th><td>{{ data[5] }}</td></tr>
+                    <tr><th>Visibility</th><td>{{ data[6] }}</td></tr>
+                    <tr><th>Probability of Precipitation</th><td>{{ data[7] }}</td></tr>
+                    <tr><th>Rain in 3hr</th><td>{{ data[8] }}</td></tr>
+                    <tr><th>Description</th><td>{{ data[9] }}</td></tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+</body>
+</html>
+
+{##}
+{##}
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#<style>#}
+{#    body {#}
+{#        font-family: Arial, sans-serif;#}
+{#    }#}
+{#    h1 {#}
+{#        text-align: center;#}
+{#    }#}
+{#    form {#}
+{#        margin-bottom: 20px;#}
+{#        text-align: center;#}
+{#    }#}
+{#    table {#}
+{#        margin-left: auto;#}
+{#        margin-right: auto;#}
+{#        border-collapse: collapse;#}
+{#        width: 60%;#}
+{#    }#}
+{#    td, th {#}
+{#        border: 1px solid #dddddd;#}
+{#        text-align: left;#}
+{#        padding: 8px;#}
+{#    }#}
+{#    th {#}
+{#        background-color: #f2f2f2;#}
+{#    }#}
+{#    tr:nth-child(even) {#}
+{#        background-color: #f9f9f9;#}
+{#    }#}
+{#</style>#}
+{##}
+{#<h1>Weather Forecast Dashboard</h1>#}
+{#<form action="/" method="post">#}
+{#    <select name="airport_code">#}
+{#        {% for code in airport_codes %}#}
+{#            <option value="{{ code[0] }}">{{ code[0] }}</option>#}
+{#        {% endfor %}#}
+{#    </select>#}
+{#    <select name="date">#}
+{#        {% for date in unique_dates %}#}
+{#            <option value="{{ date[0] }}">{{ date[0] }}</option>#}
+{#        {% endfor %}#}
+{#    </select>#}
+{#    <select name="time">#}
+{#        {% for time in time_options %}#}
+{#            <option value="{{ time }}">{{ time }}</option>#}
+{#        {% endfor %}#}
+{#    </select>#}
+{#    <input type="submit" value="Get Forecast">#}
+{#</form>#}
+{#{% if weather_data %}#}
+{#    <div style="overflow-x:auto;">#}
+{#        <table>#}
+{#            {% for data in weather_data %}#}
+{#                <tr><th>Airport Code</th><td>{{ data[0] }}</td></tr>#}
+{#                <tr><th>Datetime</th><td>{{ data[1] }}</td></tr>#}
+{#                <tr><th>Temperature</th><td>{{ data[2] }}</td></tr>#}
+{#                <tr><th>Wind Speed</th><td>{{ data[3] }}</td></tr>#}
+{#                <tr><th>Wind Degree</th><td>{{ data[4] }}</td></tr>#}
+{#                <tr><th>Wind Gust</th><td>{{ data[5] }}</td></tr>#}
+{#                <tr><th>Visibility</th><td>{{ data[6] }}</td></tr>#}
+{#                <tr><th>Probability of Precipitation</th><td>{{ data[7] }}</td></tr>#}
+{#                <tr><th>Rain in 3hr</th><td>{{ data[8] }}</td></tr>#}
+{#                <tr><th>Description</th><td>{{ data[9] }}</td></tr>#}
+{#            {% endfor %}#}
+{#        </table>#}
+{#    </div>#}
+{#{% endif %}#}
+{#{% endblock %}#}
