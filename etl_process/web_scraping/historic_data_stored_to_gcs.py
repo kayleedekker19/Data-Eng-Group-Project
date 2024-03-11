@@ -35,7 +35,7 @@ def init_webdriver():
 #     return driver
 
 def accept_cookies(driver):
-    """Navigates to cookie consent iframe and accepts, with a wait time to allow for the webdriver to load."""
+    """Navigates to cookie consent iframe and accepts, with a wait time to allow for the webdriver to fully load."""
     try:
         WebDriverWait(driver, 40).until(
             EC.frame_to_be_available_and_switch_to_it((By.XPATH, '//*[@id="sp_message_iframe_977869"]')))
