@@ -24,8 +24,8 @@ MIN_BATCH_SIZE = 20  # The min number of examples grouped together in each .npz 
 
 # Constants.
 NUM_BINS = 10  # categorise or "bin" continuous data values into discrete categories for stratified sampling
-MAX_PRECIPITATION = 30  # found empirically
-MAX_ELEVATION = 6000  # found empirically
+MAX_PRECIPITATION = 30
+MAX_ELEVATION = 6000
 PATCH_SIZE = 5  # fetching data from a 5x5 pixel area around each geographic point - effects granularity of data
 END_DATE = datetime.now() - timedelta(days=30)  # setting to 30 days before current time
 
@@ -208,4 +208,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
